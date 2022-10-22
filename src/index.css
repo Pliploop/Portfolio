@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .show {
+    @apply border-2 border-gray-200 shadow-md border-solid rounded-lg;
+  }
+}

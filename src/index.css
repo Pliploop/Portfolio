@@ -30,7 +30,7 @@
   }
 
   .contact-button {
-    @apply h-10 w-10 rounded-full bg-gradient-to-tr from-sky-300 to-teal-400 shadow-md border-gray-100 border-2 flex cursor-pointer hover:scale-105 transition-all hover:from-sky-400 hover:to-teal-500 text-white active:scale-95 flex justify-center
+    @apply lg:h-10 lg:w-10 w-8 h-8 rounded-full bg-gradient-to-tr from-sky-300 to-teal-400 shadow-md border-gray-100 border-2 flex cursor-pointer hover:scale-105 transition-all hover:from-sky-400 hover:to-teal-500 text-white active:scale-95 justify-center
   }
 
   .contact-tooltip {
@@ -38,7 +38,7 @@
   }
 
   .section-title {
-    @apply text-5xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-extrabold font-serif
+    @apply lg:text-5xl text-4xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-extrabold font-serif
   }
 
   .section-subtitle {

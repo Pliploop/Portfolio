@@ -48,16 +48,16 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-row gap-20 p-20" id="root">
-      <div className="w-3/4 h-auto flex flex-col gap-40">
-        <div className="min-h-[calc(100vh-10rem)] p-16" id="1">
+    <div className="min-h-screen flex flex-row lg:gap-20 lg:p-20 p-0" id="root">
+      <div className="grow h-auto flex flex-col gap-40 ">
+        <div className="min-h-[calc(100vh-10rem)] lg:p-16 p-8" id="1">
           <HeroSection/>
         </div>
         <div className="show h-[calc(100vh-10rem)]" id="2"></div>
         <div className="show h-[calc(100vh-10rem)]" id="3"></div>
       </div>
 
-      <div className="h-[calc(100vh-10rem)] grow sticky top-20 bottom-20 flex flex-col content-between justify-between py-20 px-10">
+      <div className="h-[calc(100vh-10rem)] w-1/4 sticky top-20 bottom-20 lg:flex flex-col content-between justify-between py-20 px-10 hidden">
         <SidebarIcon
           icon={<FaUserGraduate size={20}></FaUserGraduate>}
           aimid="1"

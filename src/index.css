@@ -4,6 +4,46 @@
 
 @layer components {
   .show {
-    @apply border-2 border-gray-200 shadow-md border-solid rounded-lg;
+    @apply border-2 border-gray-100 shadow-md border-solid rounded-lg hover:shadow-lg transition-all duration-100;
   }
+
+  
+
+  .sidebar-icon-container-active {
+    @apply w-12 h-12 flex align-middle items-center justify-center  shadow-md shadow-gray-300 rounded-full cursor-pointer active:scale-90 transition-all duration-75 bg-gradient-to-tl from-blue-400 to-teal-200  text-blue-400;
+  }
+
+  .sidebar-icon-container-inactive {
+    @apply w-12 h-12 flex align-middle items-center justify-center  shadow-lg shadow-gray-400 rounded-full cursor-pointer active:scale-90 scale-105 transition-all duration-75 bg-gradient-to-tl from-blue-400 to-teal-200  text-sky-500
+  }
+
+  .sidebar-description-active {
+    @apply pt-10 text-gray-500
+  }
+
+  .sidebar-description-inactive {
+    @apply pt-0 text-transparent group-hover:text-gray-500
+  }
+
+  .sidebar-title-active {
+    @apply text-blue-400 font-semibold
+  }
+
+  .contact-button {
+    @apply h-10 w-10 rounded-full bg-gradient-to-tr from-sky-300 to-teal-400 shadow-md border-gray-100 border-2 flex cursor-pointer hover:scale-105 transition-all hover:from-sky-400 hover:to-teal-500 text-white active:scale-95 flex justify-center
+  }
+
+  .contact-tooltip {
+    @apply absolute group-hover:text-gray-400 text-xs font-sans text-transparent group-hover:mt-11 transition-all duration-75
+  }
+
+  .section-title {
+    @apply text-5xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-extrabold font-serif
+  }
+
+  .section-subtitle {
+    @apply text-3xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-extrabold font-serif
+  }
+
+  
 }

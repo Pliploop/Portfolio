@@ -1,12 +1,12 @@
 import image from "../content/images/propic.jpg";
-import { FaGraduationCap, FaLinkedinIn, FaMediumM } from "react-icons/fa";
+import { FaGraduationCap, FaLinkedinIn, FaMicroscope } from "react-icons/fa";
 import { GiSuitcase } from "react-icons/gi";
 import { BsGlobe, BsMedium } from "react-icons/bs";
 import { VscGithub } from "react-icons/vsc";
 
 export function HeroSection() {
   return (
-    <div className="flex flex-col align-top justify-between lg:gap-20 gap-10">
+    <div className="flex flex-col align-top justify-between lg:gap-20 gap-10 mt-16">
       <div className="w-full flex lg:flex-row justify-between">
         <div className="h-[330px] w-[330px] lg:scale-100 scale-[80%] aspect-square group hidden absolute lg:m-0 ml-[250px] mt-[420px] lg:relative lg:flex">
           <div className="absolute h-20 w-20 mt-20 group-hover:ml-[-25px] transition-all duration-300 border-4 border-sky-400 rounded-full blur-[1px] group-hover:blur-sm" />
@@ -20,22 +20,51 @@ export function HeroSection() {
         <div className="grow lg:ml-20 flex flex-col justify-between gap-5">
           <div className="w-full lg:h-3/4">
             <h1 className="section-title mb-5">Julien Guinot, MSc</h1>
-            <span className="text-sm text-gray-600 font-bold text-justify"> Welcome to my academic portfolio! </span> <span className="text-sm text-gray-600"> I'm a French-American double Masters graduate passionate about music and AI, and I believe research in those fields is my vocation. I'm aiming to undertake a Music Information Retrieval oriented PhD program in september 2023 to extend my understanding of music and research. I'm a self taught guitarist, bassist vocalist, pianist, producer and DJ of 10 years.</span>
-            <br/>
-            <br/>
-            <span className="text-sm text-gray-600 text-justify"> On this website you'll find my academic writings as well as music I've either made, arranged, performed or mixed and mastered. This is an academia-oriented portfolio, so for further info and projects you can check out <a href="https://julienguinot.com" className="text-blue-400 hover:text-blue-500 hover:font-bold">my website!</a></span>
-            
-
+            <span className="text-sm text-gray-600 font-bold text-justify">
+              {" "}
+              Welcome to my artistic & academic portfolio!{" "}
+            </span>{" "}
+            <span className="text-sm text-gray-600">
+              {" "}
+              I'm a French-American double Masters graduate passionate about
+              music and AI, and I believe research in those fields is my
+              vocation. I'm aiming to undertake a Music Information Retrieval
+              oriented PhD program in september 2023 to extend my understanding
+              of music and research. I'm a self taught guitarist, bassist
+              vocalist, pianist, producer and DJ of 10 years.
+            </span>
+            <br />
+            <br />
+            <span className="text-sm text-gray-600 text-justify">
+              {" "}
+              On this website you'll find my academic writings as well as music
+              I've either made, arranged, performed or mixed and mastered. This
+              is an academia-oriented portfolio, so for further info and
+              projects you can check out{" "}
+              <a
+                href="https://julienguinot.com"
+                className="text-blue-400 hover:text-blue-500 hover:font-bold"
+              >
+                my website!
+              </a>
+            </span>
           </div>
           <ContactLinks />
         </div>
       </div>
       <div className="grow w-full flex flex-col lg:flex-row justify-between">
-        <div className="grow lg:my-0 mb-10 mt-6">
-            <h2 className="section-subtitle">Research interests</h2>
+        <div className="h-auto lg:mb-0 mb-20 grow lg:px-10">
+          <div className="flex flex-row align-middle">
+            <h2 className="font-mono text-lg font-semibold text-blue-400">
+              {" "}
+              Research interests
+            </h2>
+            <div className="mx-3 h-px grow bg-blue-400 self-center"></div>
+            <FaMicroscope size={18} className="self-center text-blue-400" />
+          </div>
 
+          
         </div>
-
         <EducationSubSection />
         <ProfessionalSubsection />
       </div>
@@ -45,7 +74,7 @@ export function HeroSection() {
 
 const EducationSubSection = () => {
   return (
-    <div className="h-auto lg:mb-0 mb-20 lg:w-1/4 lg:px-10">
+    <div className="h-auto lg:mb-0 mb-20  lg:w-1/4 lg:px-10">
       <div className="flex flex-row align-middle">
         <h2 className="font-mono text-lg font-semibold text-blue-400">
           {" "}
@@ -71,7 +100,9 @@ const EducationSubSection = () => {
           <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
             Ecole Centrale de Lyon - France
           </p>
-          <p className="font-mono text-blue-500 text-xs mt-2">GPA:show 3.6/4.0</p>
+          <p className="font-mono text-blue-500 text-xs mt-2">
+            GPA:show 3.6/4.0
+          </p>
         </li>
         <li className="mb-3 ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -159,18 +190,27 @@ const ProfessionalSubsection = () => {
 const ContactLinks = () => {
   return (
     <div className="w-full grow flex lg:gap-5 flex-row align-middle content-center md:justify-start justify-evenly lg:px-5 py-5 px-0 ">
-      <a  className="lg:h-10 h-8 px-5 rounded-full bg-gradient-to-tr from-sky-300 to-teal-400 shadow-md border-gray-100 border-2 flex cursor-pointer hover:scale-105 transition-all hover:from-sky-400 hover:to-teal-500 text-white font-semibold active:scale-95" href="a">
+      <a
+        className="lg:h-10 h-8 px-5 rounded-full bg-gradient-to-tr from-sky-300 to-teal-400 shadow-md border-gray-100 border-2 flex cursor-pointer hover:scale-105 transition-all hover:from-sky-400 hover:to-teal-500 text-white font-semibold active:scale-95"
+        href="a"
+      >
         <span className="lg:text-sm text-xs self-center align-middle font-mono">
           My Resume
         </span>
       </a>
-      <a href="https://www.github.com/Pliploop" className="contact-button group">
+      <a
+        href="https://www.github.com/Pliploop"
+        className="contact-button group"
+      >
         <VscGithub className="self-center" size={20} />
         <div className="absolute group-hover:text-gray-400 text-xs font-sans text-transparent group-hover:mt-10 transition-all duration-75">
           github
         </div>
       </a>
-      <a href="https://www.linkedin.com/in/julien-guinot" className="contact-button group">
+      <a
+        href="https://www.linkedin.com/in/julien-guinot"
+        className="contact-button group"
+      >
         <FaLinkedinIn className="self-center" size={16} />
         <div className="absolute group-hover:text-gray-400 text-xs font-sans text-transparent group-hover:mt-10 transition-all duration-75">
           Linkedin
@@ -182,11 +222,12 @@ const ContactLinks = () => {
           Website
         </div>
       </a>
-      <a href="https://www.https://medium.com/@juj_guinot" className="contact-button group">
+      <a
+        href="https://www.https://medium.com/@juj_guinot"
+        className="contact-button group"
+      >
         <BsMedium className="self-center" size={20} />
-        <div className="contact-tooltip">
-          Medium
-        </div>
+        <div className="contact-tooltip">Medium</div>
       </a>
     </div>
   );

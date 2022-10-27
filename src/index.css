@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "inter";
+  src: url("../public/fonts/inter/Inter-Medium.otf");
+}
+
 @layer components {
   .show {
     @apply border-2 border-gray-100 shadow-md border-solid rounded-lg hover:shadow-lg transition-all duration-100;
@@ -10,11 +15,11 @@
   
 
   .sidebar-icon-container-active {
-    @apply w-12 h-12 flex align-middle items-center justify-center  shadow-md shadow-gray-300 rounded-full cursor-pointer active:scale-90 transition-all duration-75 bg-gradient-to-tl from-blue-400 to-teal-200  text-blue-400;
+    @apply w-12 h-12 flex align-middle items-center justify-center  shadow-md shadow-gray-300 rounded-full cursor-pointer active:scale-90 transition-all duration-75 bg-gray-100 from-blue-400 to-teal-200  text-blue-400;
   }
 
   .sidebar-icon-container-inactive {
-    @apply w-12 h-12 flex align-middle items-center justify-center  shadow-lg shadow-gray-400 rounded-full cursor-pointer active:scale-90 scale-105 transition-all duration-75 bg-gradient-to-tl from-blue-400 to-teal-200  text-sky-500
+    @apply w-12 h-12 flex align-middle items-center justify-center  shadow-lg rounded-full cursor-pointer active:scale-90 scale-105 transition-all duration-75 bg-gradient-to-tl from-blue-400 to-teal-200  text-sky-500
   }
 
   .sidebar-description-active {
@@ -38,11 +43,11 @@
   }
 
   .section-title {
-    @apply lg:text-5xl text-4xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-extrabold font-serif
+    @apply lg:text-5xl text-4xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-inter font-bold
   }
 
   .section-subtitle {
-    @apply text-3xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-extrabold font-serif
+    @apply text-3xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-bold font-inter
   }
 
   

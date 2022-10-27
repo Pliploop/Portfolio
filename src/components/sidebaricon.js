@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-const SidebarIcon = ({ icon, aimid, visible, title, description }) => {
+const SidebarIcon = ({ icon, aimid, scrollid, visible, title, description }) => {
   const scrollto = (id) => {
     console.log("scrolling to " + id);
     let element = document.getElementById(id);
-    element.scrollIntoView({ behavior: "smooth", block: "center" });
+    element.scrollIntoView({ behavior: "smooth" });
   };
 
-  var diff = visible !== aimid;
+  var diff = visible !== scrollid;
 
 
   return (

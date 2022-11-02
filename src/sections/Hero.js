@@ -24,7 +24,7 @@ export function HeroSection() {
               {" "}
               Welcome to my artistic & academic portfolio!{" "}
             </span>{" "}
-            <span className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 text-justify">
               {" "}
               I'm a French-American double Masters graduate passionate about
               music and AI, and I believe research in those fields is my
@@ -32,10 +32,10 @@ export function HeroSection() {
               oriented PhD program in september 2023 to extend my understanding
               of music and research. I'm a self taught guitarist, bassist
               vocalist, pianist, producer and DJ of 10 years.
-            </span>
+            </p>
             <br />
             <br />
-            <span className="text-sm text-gray-600 text-justify">
+            <p className="text-sm text-gray-600 text-justify">
               {" "}
               On this website you'll find my academic writings as well as music
               I've either made, arranged, performed or mixed and mastered. This
@@ -47,15 +47,15 @@ export function HeroSection() {
               >
                 my website!
               </a>
-            </span>
+            </p>
           </div>
           <ContactLinks />
         </div>
       </div>
       <div className="grow w-full flex flex-col lg:flex-row justify-between">
-        <div className="h-auto lg:mb-0 mb-20 grow lg:px-10">
+        <div className="h-auto lg:mb-0 mb-10 grow lg:px-10">
           <div className="flex flex-row align-middle">
-            <h2 className="font-mono text-lg font-semibold text-blue-400">
+            <h2 className="font-inter text-lg font-semibold text-blue-400">
               {" "}
               Research interests
             </h2>
@@ -74,9 +74,9 @@ export function HeroSection() {
 
 const EducationSubSection = () => {
   return (
-    <div className="h-auto lg:mb-0 mb-20  lg:w-1/4 lg:px-10">
+    <div className="h-auto lg:mb-0 mb-10  lg:w-1/4 lg:px-10">
       <div className="flex flex-row align-middle">
-        <h2 className="font-mono text-lg font-semibold text-blue-400">
+        <h2 className="font-inter text-lg font-semibold text-blue-400">
           {" "}
           Education
         </h2>
@@ -126,7 +126,7 @@ const ProfessionalSubsection = () => {
   return (
     <div className="h-auto lg:w-1/4 lg:px-10 lg:ml-10">
       <div className="flex flex-row align-middle">
-        <h2 className="font-mono text-lg font-semibold text-blue-400">
+        <h2 className="font-inter text-lg font-semibold text-blue-400">
           {" "}
           Professional
         </h2>

@@ -11,6 +11,10 @@ function App() {
   const [academiaY, setacademiaY] = useState(null);
   const [musicY, setmusicY] = useState(null);
   const [visible, setvisible] = useState("1");
+  
+  useEffect(() => {
+    document.title = "Julien Guinot - Portfolio"
+  })
 
   const handlescroll = () => {
     setScrollPosition(window.scrollY + window.innerHeight / 2);
@@ -49,8 +53,8 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-row lg:gap-20 lg:p-20 p-0" id="root">
-      <div className="w-grow h-auto flex flex-col gap-40 ">
+    <div className="min-h-screen flex lg:w-auto w-screen lg:flex-row flex-col lg:gap-20 md:p-10 lg:p-20 p-0 overflow-clip" id="root">
+      <div className="grow h-auto flex flex-col gap-40 ">
         <div className="min-h-[calc(100vh-10rem)] lg:px-16 px-8" id="1">
           <HeroSection/>
         </div>
@@ -60,7 +64,7 @@ function App() {
         </div>
       </div>
 
-      <div className="h-[calc(100vh-10rem)] w-[30%] sticky top-20 bottom-20 lg:flex flex-col content-between justify-between py-20 px-10 hidden">
+      <div className="h-[calc(100vh-10rem)] lg:w-[40%] sticky top-20 bottom-20 lg:flex flex-col content-between justify-between py-20 px-10 hidden">
         <SidebarIcon
           icon={<FaUserGraduate size={20}></FaUserGraduate>}
           aimid="root"

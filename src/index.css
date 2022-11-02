@@ -5,6 +5,17 @@
 @font-face {
   font-family: "inter";
   src: url("../public/fonts/inter/Inter-Medium.otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("../public/fonts/inter/Inter-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @layer components {
@@ -12,43 +23,59 @@
     @apply border-2 border-gray-100 shadow-md border-solid rounded-lg hover:shadow-lg transition-all duration-100;
   }
 
-  
-
   .sidebar-icon-container-active {
     @apply w-12 h-12 flex align-middle items-center justify-center  shadow-md shadow-gray-300 rounded-full cursor-pointer active:scale-90 transition-all duration-75 bg-gray-100 from-blue-400 to-teal-200  text-blue-400;
   }
 
   .sidebar-icon-container-inactive {
-    @apply w-12 h-12 flex align-middle items-center justify-center  shadow-lg rounded-full cursor-pointer active:scale-90 scale-105 transition-all duration-75 bg-gradient-to-tl from-blue-400 to-teal-200  text-sky-500
+    @apply w-12 h-12 flex align-middle items-center justify-center  shadow-lg rounded-full cursor-pointer active:scale-90 scale-105 transition-all duration-75 bg-gradient-to-tl from-blue-400 to-teal-200  text-sky-500;
   }
 
   .sidebar-description-active {
-    @apply pt-10 text-gray-500
+    @apply pt-10 text-gray-500;
   }
 
   .sidebar-description-inactive {
-    @apply pt-0 text-transparent group-hover:text-gray-500
+    @apply pt-0 text-transparent group-hover:text-gray-500;
   }
 
   .sidebar-title-active {
-    @apply text-blue-400 font-semibold
+    @apply text-blue-400 font-semibold;
   }
 
   .contact-button {
-    @apply lg:h-10 lg:w-10 w-8 h-8 rounded-full bg-gradient-to-tr from-sky-300 to-teal-400 shadow-md border-gray-100 border-2 flex cursor-pointer hover:scale-105 transition-all hover:from-sky-400 hover:to-teal-500 text-white active:scale-95 justify-center
+    @apply lg:h-10 lg:w-10 w-8 h-8 rounded-full bg-gradient-to-tr from-sky-300 to-teal-400 shadow-md border-gray-100 border-2 flex cursor-pointer hover:scale-105 transition-all hover:from-sky-400 hover:to-teal-500 text-white active:scale-95 justify-center;
   }
 
   .contact-tooltip {
-    @apply absolute group-hover:text-gray-400 text-xs font-sans text-transparent group-hover:mt-11 transition-all duration-75
+    @apply absolute group-hover:text-gray-400 text-xs font-sans text-transparent group-hover:mt-11 transition-all duration-75;
   }
 
   .section-title {
-    @apply lg:text-5xl text-4xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-inter font-bold
+    @apply lg:text-5xl text-4xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-inter font-bold;
   }
 
   .section-subtitle {
-    @apply text-3xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-bold font-inter
+    @apply text-3xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-bold font-inter;
   }
 
-  
+  .commuzpinkdate {
+    @apply absolute text-gray-400 font-mono lg:mt-20 lg:ml-0 ml-28 mt-20 text-sm transition-all;
+  }
+
+  .commuzpinkrole {
+    @apply ml-[370px] absolute text-gray-600 font-inter lg:mt-[-100px] lg:ml-0 lg:items-center text-sm transition-all w-72 justify-end flex flex-col items-start;
+  }
+
+  .featured-tag {
+    @apply border-[1px] border-b-2 border-white bg-gradient-to-tr from-emerald-300 to-emerald-500 shadow-md text-white font-bold rounded-full px-5 p-2 font-mono text-[10px] cursor-default hover:scale-[101%] hover:from-teal-500 hover:shadow-gray-400 hover:to-emerald-400 transition-all duration-75;
+  }
+
+  .featured-tag-yellow {
+    @apply border-[1px] border-b-2 border-white bg-gradient-to-tr from-yellow-300 to-orange-500 shadow-md text-white font-bold rounded-full px-5 p-2 font-mono text-[10px] cursor-default hover:scale-[101%] hover:from-orange-500 hover:shadow-gray-400 hover:to-yellow-400 transition-all duration-75;
+  }
+
+  .featured-tag-purple {
+    @apply border-[1px] border-b-2 border-white bg-gradient-to-tr from-blue-300 to-purple-500 shadow-md text-white font-bold rounded-full px-5 p-2 font-mono text-[10px] cursor-default hover:scale-[101%] hover:from-blue-600 hover:shadow-gray-400 hover:to-purple-400 transition-all duration-75;
+  }
 }

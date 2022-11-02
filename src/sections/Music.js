@@ -1,7 +1,5 @@
-import image from "../content/images/propic.jpg";
-import { GrLinkNext, GrLinkPrevious, GrDown, GrUp } from "react-icons/gr";
+import { GrLinkNext, GrDown } from "react-icons/gr";
 
-import logo from "../content/images/logo.svg";
 import { IoIosMusicalNotes, IoIosMusicalNote } from "react-icons/io";
 import { MdGraphicEq } from "react-icons/md";
 import { FaPenNib } from "react-icons/fa";

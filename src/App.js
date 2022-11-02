@@ -2,7 +2,7 @@ import { FaUserGraduate } from "react-icons/fa";
 import { HiAcademicCap } from "react-icons/hi";
 import { GiGuitarBassHead } from "react-icons/gi";
 import { SidebarIcon } from "./components/sidebaricon";
-import { useEffect, useRef, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 import {HeroSection} from './sections/Hero'
 import{MusicSection} from './sections/Music'
 
@@ -21,18 +21,18 @@ function App() {
   };
 
   useEffect(() => {
-    if (visible != "1" && scrollPosition < academiaY) {
+    if (visible !== "1" && scrollPosition < academiaY) {
       setvisible("1");
     }
     if (
       scrollPosition > academiaY &&
-      visible != "2" &&
+      visible !=="2" &&
       scrollPosition < musicY
     ) {
       setvisible("2");
       console.log("visible");
     }
-    if (scrollPosition > musicY && visible != "3") {
+    if (scrollPosition > musicY && visible !== "3") {
       setvisible("3");
     }
   }, [scrollPosition]);

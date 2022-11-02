@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 const SidebarIcon = ({ icon, aimid, scrollid, visible, title, description }) => {
   const scrollto = (id) => {

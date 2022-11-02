@@ -35,7 +35,7 @@ function App() {
     if (scrollPosition > musicY && visible !== "3") {
       setvisible("3");
     }
-  }, [scrollPosition]);
+  }, [scrollPosition,academiaY,musicY,visible]);
 
   useEffect(() => {
     document.addEventListener("scroll", () => handlescroll());

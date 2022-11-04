@@ -62,8 +62,6 @@ export function HeroSection() {
             <div className="mx-3 h-px grow bg-blue-400 self-center"></div>
             <FaMicroscope size={18} className="self-center text-blue-400" />
           </div>
-
-          
         </div>
         <EducationSubSection />
         <ProfessionalSubsection />
@@ -192,7 +190,7 @@ const ContactLinks = () => {
     <div className="w-full grow flex lg:gap-5 flex-row align-middle content-center md:justify-start justify-evenly lg:px-5 py-5 px-0 ">
       <a
         className="lg:h-10 h-8 px-5 rounded-full bg-gradient-to-tr from-sky-300 to-teal-400 shadow-md border-gray-100 border-2 flex cursor-pointer hover:scale-105 transition-all hover:from-sky-400 hover:to-teal-500 text-white font-semibold active:scale-95"
-        href="a"
+        href="/resume.pdf"
       >
         <span className="lg:text-sm text-xs self-center align-middle font-mono">
           My Resume

@@ -32,6 +32,7 @@ export function MusicSection() {
       </div>
       <div className="flex flex-col w-full  mb-20">
         <MusicHeader text={"Arrangements"} />
+        <MusicArranged/>
       </div>
     </div>
   );
@@ -83,7 +84,7 @@ const MusicIntro = () => {
             <h2 className="lg:text-xl text-lg font-inter font-bold z-50 mb-3 text-purple-500">
               Performance
             </h2>
-            <ul className="lg:ml-14 z-50 font-mono lg:text-base text-sm">
+            <ul className="lg:ml-14 z-50 font-mono lg:text-sm text-sm">
               <li>
                 <div className="flex flex-row justify-start items-center">
                   acoustic & Electric guitar{" "}
@@ -119,7 +120,7 @@ const MusicIntro = () => {
             <h2 className="lg:text-xl text-lg text-teal-500 font-inter font-bold lg:justify-end flex z-50 mb-5">
               Composition & Production
             </h2>
-            <ul className="lg:mr-14 z-50 font-mono lg:text-base text-sm">
+            <ul className="lg:mr-14 z-50 font-mono lg:text-sm text-sm">
               <li>
                 <div className="flex flex-row justify-start items-center">
                   House production - FL Studio & Ableton{" "}
@@ -172,7 +173,7 @@ const MusicIntro = () => {
             <h2 className="lg:text-xl text-lg font-inter font-bold z-50 mb-5 text-sky-500">
               Mixing & Mastering
             </h2>
-            <ul className="lg:ml-14 z-50 font-mono lg:text-base text-sm">
+            <ul className="lg:ml-14 z-50 font-mono lg:text-sm text-sm">
               <li>
                 <div className="flex flex-row justify-start items-center">
                   Mixing of 4 24-track orchestral production albums
@@ -198,6 +199,12 @@ const MusicIntro = () => {
     </div>
   );
 };
+
+const MusicArranged = () => {
+  return (
+    <div className="show h-56 w-full"></div>
+  )
+}
 
 const MusicFeatured = () => {
   function toggleAztecText() {
@@ -311,8 +318,8 @@ const MusicFeatured = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row w-full gap-10">
-        <div className="flex flex-col w-1/2 h-full">
+      <div className="flex lg:flex-row flex-col w-full gap-10">
+        <div className="flex flex-col lg:w-1/2 h-full">
           <div className="lg:h-full w-full border-[1.5px] border-orange-300 border-b-[6px] cursor-pointer text-gray-600 hover:shadow-lg hover:scale-[102%] hover:border-orange-600 transition-all duration-100 shadow-md rounded-3xl p-5">
             <h2 className="font-inter text-lg mb-8 font-bold text-orange-500">
               LikeTHAT : disco house production
@@ -327,7 +334,7 @@ const MusicFeatured = () => {
               ></div>
 
               <div className="flex flex-row gap-5 w-full">
-                <div className="aspect-square w-1/3 rounded-2xl overflow-clip mb-5 shadow-md">
+                <div className="aspect-square w-1/2 rounded-2xl overflow-clip mb-5 shadow-md">
                   <ReactPlayer
                     className="w-full h-12"
                     height={"100%"}
@@ -341,18 +348,25 @@ const MusicFeatured = () => {
                     <div className="featured-tag-yellow">Mixing</div>
                     <div className="featured-tag-yellow">Mastering</div>
                   </div>
-                  <p className="font-inter text-sm  mb-10">
-                    The final movement is agressive and percussive : I used
-                    samples of traditional drums from south america, samples of
-                    aztec death whistles and my own voice to create a chorus of
-                    warriors chanting.
+                  <p className="font-inter text-sm  mb-3">
+                    I produced this disco house track during the first lockdown
+                    (2020) to integrate into my DJ sets. I used ableton and this
+                    was first time producing something from scratch. I learned a
+                    lot about mixing producing this! I play the guitar and bass
+                    on this track.
+                  </p>
+                  <p className="font-inter text-sm  mb-3">
+                    Note : this is a remastered version of the track, In which I
+                    corrected the tonal balance as low-end was much too present
+                    (specifically kick was overpowering) and glued the mix
+                    together a bit more using saturation and compression.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-1/2 h-full">
+        <div className="flex flex-col lg:w-1/2 h-full">
           <div className="lg:h-full w-full border-[1.5px] border-purple-300 border-b-[6px] cursor-pointer text-gray-600 hover:shadow-lg hover:scale-[102%] hover:border-purple-400 transition-all duration-100 shadow-md rounded-3xl p-5">
             <h2 className="font-inter text-lg mb-8 font-bold text-purple-500">
               Feeling good : orchestral mix
@@ -381,11 +395,16 @@ const MusicFeatured = () => {
                     <div className="featured-tag-purple">Mastering</div>
                   </div>
 
-                  <p className="font-inter text-sm  mb-10">
-                    The final movement is agressive and percussive : I used
-                    samples of traditional drums from south america, samples of
-                    aztec death whistles and my own voice to create a chorus of
-                    warriors chanting.
+                  <p className="font-inter text-sm  mb-3">
+                    This is what I consider to be the best mix I produced from
+                    the latest album of the student musical I was part of for 4
+                    years (See mix/mastering). It's my latest mix and represents
+                    my mixing ability well.
+                  </p>
+                  <p className="font-inter text-sm  mb-5">
+                    I am also specifically proud of this track because I was the
+                    vocal coach for the main performer and I believe the
+                    performance turned out quite well.
                   </p>
                 </div>
               </div>
@@ -747,7 +766,7 @@ const AlbumDescriptionDesorien = ({ color, albumid, currentalbum }) => {
         mixing and audio post-production. My tracks are sloppy but I am proud as
         they were the start of my journey in mixing.
       </span>
-      <ul className="flex flex-wrap justify-evenly list-disc items-center text-orange-500 text-sm dark:text-white ">
+      <ul className="flex  lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-orange-500 text-sm dark:text-white ">
         <li className="font-inter font-bold">Ali Babouche</li>
         <li className="font-inter font-bold">Le bazar</li>
         <li className="font-inter font-bold">
@@ -802,7 +821,7 @@ const AlbumDescriptionEnMem = ({ color, albumid, currentalbum }) => {
           I had learned so much the previous years and am proud of my mixes,
           which are:
         </p>
-        <ul className="flex flex-wrap justify-evenly list-disc items-center text-purple-500 dark:text-white ">
+        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-purple-500 dark:text-white ">
           <li className="font-inter font-bold">Treasure</li>
           <li className="font-inter font-bold">Joga</li>
           <li className="font-inter font-bold">Le rituel</li>
@@ -872,7 +891,7 @@ const AlbumDescriptionNocesDo = ({ color, albumid, currentalbum }) => {
         As per usual, I was also in charge of distributing the album on spotify.
         My contributions as mix engineer to the album were:
       </span>
-      <ul className="flex flex-wrap justify-evenly list-disc items-center text-red-500 text-sm dark:text-white ">
+      <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-red-500 text-sm dark:text-white ">
         <li className="font-inter font-bold">Good Morning</li>
         <li className="font-inter font-bold">Eternal Youth</li>
         <li className="font-inter font-bold">I love you</li>
@@ -933,7 +952,7 @@ const AlbumDescriptionContre = ({ color, albumid, currentalbum }) => {
           first time. My contributions as mix engineer to the album were:{" "}
         </p>
 
-        <ul className="flex flex-wrap justify-evenly list-disc items-center text-blue-500 text-sm dark:text-white ">
+        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-blue-500 text-sm dark:text-white ">
           <li className="font-inter font-bold">Te Deum</li>
           <li className="font-inter font-bold">A contretemps</li>
           <li className="font-inter font-bold">La cour dérape</li>

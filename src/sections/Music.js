@@ -32,7 +32,7 @@ export function MusicSection() {
       </div>
       <div className="flex flex-col w-full  mb-20">
         <MusicHeader text={"Arrangements"} />
-        <MusicArranged/>
+        <MusicArranged />
       </div>
     </div>
   );
@@ -84,7 +84,7 @@ const MusicIntro = () => {
             <h2 className="lg:text-xl text-lg font-inter font-bold z-50 mb-3 text-purple-500">
               Performance
             </h2>
-            <ul className="lg:ml-14 z-50 font-mono lg:text-sm text-sm">
+            <ul className="lg:ml-14 z-50 font-mono lg:text-sm text-xs">
               <li>
                 <div className="flex flex-row justify-start items-center">
                   acoustic & Electric guitar{" "}
@@ -120,7 +120,7 @@ const MusicIntro = () => {
             <h2 className="lg:text-xl text-lg text-teal-500 font-inter font-bold lg:justify-end flex z-50 mb-5">
               Composition & Production
             </h2>
-            <ul className="lg:mr-14 z-50 font-mono lg:text-sm text-sm">
+            <ul className="lg:mr-14 z-50 font-mono lg:text-sm text-xs">
               <li>
                 <div className="flex flex-row justify-start items-center">
                   House production - FL Studio & Ableton{" "}
@@ -141,7 +141,7 @@ const MusicIntro = () => {
               </li>
               <li>
                 <div className="flex flex-row justify-start items-center">
-                  Arrangements for SATB choir and solo male choir{" "}
+                  Arrangements for SATB choir{" "}
                   <div className="h-px grow mx-3 bg-teal-400 "></div>
                 </div>
               </li>
@@ -173,10 +173,10 @@ const MusicIntro = () => {
             <h2 className="lg:text-xl text-lg font-inter font-bold z-50 mb-5 text-sky-500">
               Mixing & Mastering
             </h2>
-            <ul className="lg:ml-14 z-50 font-mono lg:text-sm text-sm">
+            <ul className="lg:ml-14 z-50 font-mono lg:text-sm text-xs">
               <li>
                 <div className="flex flex-row justify-start items-center">
-                  Mixing of 4 24-track orchestral production albums
+                  Mixing of 4 24-track orchestral albums
                   <div className="h-px grow mx-3 bg-sky-400 "></div>
                 </div>
               </li>
@@ -202,9 +202,49 @@ const MusicIntro = () => {
 
 const MusicArranged = () => {
   return (
-    <div className="show h-56 w-full"></div>
-  )
-}
+    <div className="h-auto w-full flex lg:flex-row flex-col lg:justify-between gap-10">
+      <div className="lg:w-1/3 h-full rounded-2xl flex flex-col border-[1px] hover:border-pink-600 hover:scale-[102%] border-pink-400 p-5 transition-all duration-75 border-b-4">
+        <h2 className="text-lg font-inter font-bold text-pink-400 mb-3">
+          Santiana - solo choir arrangement
+        </h2>
+        <div className="h-px bg-gradient-to-r from-pink-400 to-transparent w-full mb-5"></div>
+        <div className="rounded-2xl overflow-clip shadow-md w-full aspect-video">
+          <ReactPlayer
+            width={"100%"}
+            height={"100%"}
+            url="https://www.youtube.com/watch?v=wOYzFccbHPg"
+          />
+        </div>
+      </div>
+      <div className="lg:w-1/3 h-full rounded-2xl flex flex-col border-[1px] hover:border-slate-600 hover:scale-[102%] border-slate-400 p-5 transition-all duration-75 border-b-4">
+        <h2 className="text-lg font-inter font-bold text-slate-600 mb-3">
+          Misty mountains - solo choir
+        </h2>
+        <div className="h-px bg-gradient-to-r from-slate-600 to-transparent w-full mb-5"></div>
+        <div className="rounded-2xl overflow-clip shadow-md w-full aspect-video">
+          <ReactPlayer
+            width={"100%"}
+            height={"100%"}
+            url="https://soundcloud.com/jujgui/misty-moutains?si=7f2aff6b73ba4b6a87195593ef93508e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+          />
+        </div>
+      </div>
+      <div className="lg:w-1/3 h-full rounded-2xl flex flex-col border-[1px] hover:border-red-600 hover:scale-[102%] border-red-400 p-5 transition-all duration-75 border-b-4">
+        <h2 className="text-lg font-inter font-bold text-red-500 mb-3">
+          Let it snow - SATB arrangement
+        </h2>
+        <div className="h-px bg-gradient-to-r from-red-500 to-transparent w-full mb-5"></div>
+        <div className="rounded-2xl overflow-clip shadow-md w-full aspect-video shadow-gray-400">
+          <ReactPlayer
+            width={"100%"}
+            height={"100%"}
+            url="https://www.youtube.com/watch?v=rV-yjLLGi6U"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const MusicFeatured = () => {
   function toggleAztecText() {
@@ -319,22 +359,22 @@ const MusicFeatured = () => {
         </div>
       </div>
       <div className="flex lg:flex-row flex-col w-full gap-10">
-        <div className="flex flex-col lg:w-1/2 h-full">
+        <div className="flex flex-col lg:w-2/3 w-full h-full">
           <div className="lg:h-full w-full border-[1.5px] border-orange-300 border-b-[6px] cursor-pointer text-gray-600 hover:shadow-lg hover:scale-[102%] hover:border-orange-600 transition-all duration-100 shadow-md rounded-3xl p-5">
             <h2 className="font-inter text-lg mb-8 font-bold text-orange-500">
               LikeTHAT : disco house production
             </h2>
             <div
-              className="h-44 lg:h-auto overflow-hidden relative transition-all duration-200"
+              className="h-auto lg:h-auto overflow-hidden relative transition-all duration-200"
               id="likethatreadmoretext"
             >
               <div
-                className="absolute h-full w-full bg-gradient-to-b from-transparent to-white lg:hidden"
+                className="absolute h-full w-full bg-gradient-to-b from-transparent to-white lg:hidden hidden"
                 id="likethatreadmoregradient"
               ></div>
 
-              <div className="flex flex-row gap-5 w-full">
-                <div className="aspect-square w-1/2 rounded-2xl overflow-clip mb-5 shadow-md">
+              <div className="flex lg:flex-row flex-col gap-5 w-full">
+                <div className="aspect-square lg:w-56 w-full rounded-2xl overflow-clip mb-5 shadow-md">
                   <ReactPlayer
                     className="w-full h-12"
                     height={"100%"}
@@ -342,7 +382,7 @@ const MusicFeatured = () => {
                     url="https://soundcloud.com/jujgui/likethat-remastered"
                   />
                 </div>
-                <div className="flex flex-col w-2/3">
+                <div className="flex flex-col lg:w-2/3">
                   <div className="flex flex-row justify-items-start gap-3 h-8 flex-wrap mb-6">
                     <div className="featured-tag-yellow">Production</div>
                     <div className="featured-tag-yellow">Mixing</div>
@@ -372,16 +412,16 @@ const MusicFeatured = () => {
               Feeling good : orchestral mix
             </h2>
             <div
-              className="h-44 lg:h-auto overflow-hidden relative transition-all duration-200"
+              className="h-auto lg:h-auto overflow-hidden relative transition-all duration-200"
               id="likethatreadmoretext"
             >
               <div
-                className="absolute h-full w-full bg-gradient-to-b from-transparent to-white lg:hidden"
+                className="absolute h-full w-full bg-gradient-to-b from-transparent to-white lg:hidden hidden"
                 id="likethatreadmoregradient"
               ></div>
 
-              <div className="flex flex-row gap-5 w-full">
-                <div className="aspect-square w-1/3 rounded-2xl overflow-clip mb-10 shadow-md">
+              <div className="flex lg:flex-row flex-col gap-5 w-full">
+                <div className="aspect-square lg:w-56 rounded-2xl overflow-clip mb-10 shadow-md">
                   <ReactPlayer
                     className="w-full h-12"
                     height={"100%"}
@@ -389,7 +429,7 @@ const MusicFeatured = () => {
                     url="https://soundcloud.com/jujgui/feeling-good?si=b5c13b28cb4e4332b8c69a01fea99cfa&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
                   />
                 </div>
-                <div className="flex flex-col w-2/3">
+                <div className="flex flex-col lg:w-2/3">
                   <div className="flex flex-row justify-items-start gap-3 mb-6 h-8 flex-wrap">
                     <div className="featured-tag-purple">Mixing</div>
                     <div className="featured-tag-purple">Mastering</div>
@@ -450,7 +490,7 @@ const MusicMixMaster = () => {
             </blockquote>
             <div className="flex lg:flex-row flex-col">
               <div>
-                <p class="mt-8 font-inter leading-relaxed text-gray-900 dark:text-white lg:text-base text-sm z-50 mb-10 lg:w-3/4 text-justify">
+                <p class="mt-8 font-inter leading-relaxed text-gray-900 dark:text-white lg:text-base text-sm z-50 mb-10 lg:w-5/6 text-justify">
                   Every year, a new play is born and I took part in each one of
                   my 4 years at ECL. I started as a sound engineer and kept
                   mixing the album every year, which is mostly where I learned
@@ -588,9 +628,9 @@ const MixMasterAlbums = () => {
   });
 
   return (
-    <div className="flex lg:flex-row flex-col w-full h-[1200px] lg:h-[700px] gap-20">
+    <div className="flex lg:flex-row flex-col w-full h-auto lg:h-[700px] gap-20">
       <div
-        className="flex lg:w-1/2 h-5/6 flex-row justify-center self-center w-full"
+        className="flex lg:w-1/2 lg:h-5/6 flex-row justify-center self-center w-full"
         {...handlers}
       >
         <div
@@ -602,7 +642,7 @@ const MixMasterAlbums = () => {
             className="m-auto text-white group-hover:text-sky-500 group-hover:scale-105"
           />
         </div>
-        <div className="h-full lg:w-1/2 w-3/4 relative">
+        <div className="lg:h-full h-[300px] lg:w-1/2 w-3/4 relative">
           <AlbumEmbed
             link={
               "https://open.spotify.com/embed/album/4boTthC3VNuTVeBVcmJAED?utm_source=generator"
@@ -634,7 +674,7 @@ const MixMasterAlbums = () => {
         </div>
 
         <div
-          className="hidden lg:flex h-14 border-2 border-white ml-5 aspect-square rounded-full z-50 self-center cursor-pointer hover:shadow-md shadow-gray-800 active:scale-95 active:bg-gray-200 hover:border-sky-500 group hover:scale-105 ease-linear transition-all duration-[25ms] "
+          className="hidden lg:flex h-14 border-2 border-white ml-5 aspect-square rounded-full z-50 self-center cursor-pointer hover:shadow-md shadow-gray-600 active:scale-95 active:bg-gray-200 hover:border-sky-500 group hover:scale-105 ease-linear transition-all duration-[25ms] "
           onClick={() => changealbum(true)}
         >
           <BiSkipNext
@@ -721,7 +761,7 @@ const AlbumEmbed = ({ link, currentalbum, albumid }) => {
     <div className={classname}>
       <iframe
         src={link}
-        className="rounded-xl  h-full w-full shadow-md shadow-gray-800 select-none"
+        className="rounded-xl  h-full w-full shadow-md shadow-gray-500 select-none"
         frameBorder="0"
         allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"

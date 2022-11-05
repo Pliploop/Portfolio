@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <div className="flex flex-col align-top justify-between lg:gap-20 gap-10 mt-16">
       <div className="w-full flex lg:flex-row justify-between">
-        <div className="h-[330px] w-[330px] lg:scale-100 scale-[80%] aspect-square group hidden absolute lg:m-0 ml-[250px] mt-[420px] lg:relative lg:flex">
+        <div className="h-[330px] w-[330px] lg:scale-100 scale-[80%] aspect-square group absolute hidden lg:m-0 ml-[250px] mt-[420px] lg:relative lg:flex">
           <div className="absolute h-20 w-20 mt-20 group-hover:ml-[-25px] transition-all duration-300 border-4 border-sky-400 rounded-full blur-[1px] group-hover:blur-sm" />
           <div className="absolute h-32 w-20 mt-48 group-hover:h-36 transition-all duration-300 border-4 border-sky-600 rounded-full blur-[1px] group-hover:blur-sm" />
           <div className="absolute h-20 w-20 mt-[230px] ml-[230px] transition-all duration-300 border-4 border-teal-500 rounded-xl blur-[2px] group-hover:blur-sm" />
@@ -49,6 +49,15 @@ export function HeroSection() {
               </a>
             </p>
           </div>
+          <div className="lg:hidden w-full lg:scale-100 scale-[80%] aspect-square group lg:m-0 lg:relative flex">
+          <div className="absolute h-20 w-20 mt-20 group-focus:ml-[-25px] transition-all duration-300 border-4 border-sky-400 rounded-full blur-[1px] group-focus:blur-sm" />
+          <div className="absolute h-32 w-20 mt-48 group-focus:h-36 transition-all duration-300 border-4 border-sky-600 rounded-full blur-[1px] group-focus:blur-sm" />
+          <div className="absolute h-20 w-20 mt-[230px] ml-[230px] transition-all duration-300 border-4 border-teal-500 rounded-xl blur-[2px] group-focus:blur-sm" />
+          <div className="absolute h-56 w-56 mt-2 group-focus:mt-0 ml-4 group-focus:ml-0 transition-all duration-300 border-4 border-teal-400 rounded-full blur-[3px] group-focus:blur-[5px] z-50" />
+          <div className="h-full scale-95 border-white border-8 group-focus:scale-100 transition-all shadow-lg group-focus:shadow-gray-400 aspect-square rounded-full overflow-hidden">
+            <img src={image} alt="me"></img>
+          </div>
+        </div>
           <ContactLinks />
         </div>
       </div>
@@ -99,7 +108,7 @@ const EducationSubSection = () => {
             Ecole Centrale de Lyon - France
           </p>
           <p className="font-mono text-blue-500 text-xs mt-2">
-            GPA:show 3.6/4.0
+            GPA: 3.6/4.0
           </p>
         </li>
         <li className="mb-3 ml-4">

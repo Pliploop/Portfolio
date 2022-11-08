@@ -62,7 +62,7 @@ function App() {
         <div className="min-h-[calc(100vh-10rem)] lg:px-16 px-8" id="1">
           <HeroSection />
         </div>
-        <div className=" lg:px-16 px-8" id="2">
+        <div className=" lg:px-16 px-8 pt-10" id="2">
           <AcademiaSection />
         </div>
         <div className="min-h-[calc(100vh-10rem)]  lg:px-16 px-8" id="3">

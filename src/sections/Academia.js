@@ -31,7 +31,7 @@ const AcademiaSection = () => {
         of relevance to my research interests.
       </div>
       <div className="flex justify-center items-center align-middle content-center">
-        <div className=" flex flex-col content-center items-center justify-between w-6 h-[2000px]">
+        <div className=" flex flex-col content-center items-center justify-between w-6 h-[2500px]">
           <div className="w-3 aspect-square bg-blue-200 rounded-full flex justify-center">
             <ThesisSection />
           </div>
@@ -58,16 +58,13 @@ const AcademiaHeader = ({ text }) => {
 };
 
 function ThesisSection() {
-  const [lang, setlang] = useState("english");
+  // const [lang, setlang] = useState("english");
 
   return (
     <div className="absolute lg:w-2/3 md:w-[calc(100%-10rem)] w-[calc(100%-3rem)] h-56 flex flex-row justify-evenly lg:gap-16 gap-8 -mt-2">
       <div className="lg:w-1/2 w-full h-full flex flex-col justify-start content-end items-end">
         <div className="flex flex-col content-start gap-3 w-full h-full">
-          <div className="text-sm font-mono text-blue-400 text-right mb-5 mt-1">
-            {" "}
-            2022
-          </div>
+          
           <div className="text-lg font-inter font-bold text-gray-800 text-right mb-3">
             {" "}
             Masters' thesis : Automatic Music Tagging at Scale towards better
@@ -83,12 +80,25 @@ function ThesisSection() {
             <div className=" text-base font-inter text-right text-gray-500 mb-">
               full text
             </div>
-            <div className=" h-px w-12 bg-gray-400"/>
-              
-            <div className=" rounded-2xl px-3 py-2 bg-gray-100 flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-red-500 hover:text-red-600 transition-all duration-[30ms] items-center shadow-md group hover:bg-gray-0 cursor-pointer">
-              <BsFillFileEarmarkPdfFill size={18}/>
-              <div className="font-inter text-gray-500 text-xs group-hover:text-gray-600 group-active:text-red-500">Download</div>
+            <div className=" h-px w-12 bg-gray-400" />
+
+            <div className=" rounded-2xl px-3 py-2 bg-gray-100 flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-red-500 hover:text-red-600 transition-all duration-[30ms] items-center shadow-sm shadow-gray-300 group hover:bg-gray-0 cursor-pointer">
+              <BsFillFileEarmarkPdfFill size={18} />
+              <div className="font-inter text-gray-500 text-xs group-hover:text-gray-600 group-active:text-red-500">
+                Download
+              </div>
             </div>
+          </div>
+
+          <div className="flex flex-col mt-6 items-end gap-3">
+            <div className="text-base font-inter text-blue-500 font-bold text-right mb-3">
+              Table of contents
+            </div>
+            <Tocitem num={"1."} text={"State of the art - audio preprocessing"}/>
+            <Tocitem num={"2."} text={"State of the art - Music Tagging Models"}/>
+            <Tocitem num={"3."} text={"Implementation"}/>
+            <Tocitem num={"4."} text={"Pipeline design & Model selection"}/>
+            <Tocitem num={"5."} text={"Results"}/>
           </div>
         </div>
       </div>
@@ -100,15 +110,15 @@ function ThesisSection() {
           </div>
           <div className="h-px grow bg-gray-500"></div>
         </div>
-        <div className="font-inter text-[10px] text-justify flex flex-col gap-3 text-gray-600">
+        <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-600">
           <p>
             Recommendation systems have a notable and growing importance in the
             music industry. Be it music streaming platforms, music creation
             tools or music-related social network recommendations, recommender
             systems are part of our everyday music life. Groover specifically is
             a tech company aiming to create opportunities for independent music
-            artists by allowing them to send tracks to industry professionnals to
-            expand their network, receive feedback, or be promoted by said
+            artists by allowing them to send tracks to industry professionnals
+            to expand their network, receive feedback, or be promoted by said
             curator. This puts Groover in a specific spot in the recommender
             system space : recommending professionals, who are both users and
             products, to users.
@@ -160,6 +170,25 @@ const Academiatag = ({ text }) => {
   return (
     <div className="rounded-full px-2 py-1.5 bg-gray-100 shadow-sm shadow-gray-300 items-center justify-center">
       {text}
+    </div>
+  );
+};
+
+const Tocitem = ({num,text,href}) => {
+  return (
+    <div className="flex flex-col w-3/4 justify-evenly">
+      <div className="flex flex-row w-full items-center">
+        <div className="font-mono font-bold text-base text-blue-600 mr-3">
+          {num}
+        </div>
+        <div className="font-mono text-xs text-gray-600">
+          {text}
+        </div>
+        <div className="h-px bg-gray-200 grow mx-5"></div>
+        <div className=" rounded-full p-2 flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-red-500 hover:text-red-600 transition-all duration-[30ms] items-center shadow-sm shadow-gray-300 group hover:bg-gray-0 cursor-pointer">
+          <BsFillFileEarmarkPdfFill size={14} />
+        </div>
+      </div>
     </div>
   );
 };

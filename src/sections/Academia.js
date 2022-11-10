@@ -1,10 +1,17 @@
-
 import SectionHeader from "../components/header";
-import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
+import {
+  Timelinedot,
+  FillerBar,
+  Academiatag,
+} from "../components/academiacomponents/UnitComponents";
+import { ThesisSection } from "../components/academiacomponents/ThesisSection";
+import { BsFileEarmarkPdf } from "react-icons/bs";
+import { SiMicrosoftpowerpoint } from "react-icons/si";
+import { VscGithub } from "react-icons/vsc";
 
 const AcademiaSection = () => {
   return (
-    <div className="lg:px-10 w-full">
+    <div className="lg:px-10 w-full mb-56">
       <AcademiaHeader text={"Writing samples"} />
       <div className="w-full text-sm font-inter mb-3 text-justify">
         Here you'll find some of the papers I wrote in an academic context.
@@ -30,19 +37,15 @@ const AcademiaSection = () => {
         I've elected to include them in chronological order as it is also order
         of relevance to my research interests.
       </div>
-      <div className="flex justify-center items-center align-middle content-center">
-        <div className=" flex flex-col content-center items-center justify-between w-6 h-[2500px]">
-          <div className="w-3 aspect-square bg-blue-200 rounded-full flex justify-center">
-            <ThesisSection />
-          </div>
-          <div className="w-px bg-gray-200 my-3 grow"></div>
-          <div className="w-3 aspect-square bg-blue-200 rounded-full"></div>
-          <div className="w-px bg-gray-200 my-3 grow"></div>
-          <div className="w-3 aspect-square bg-blue-200 rounded-full"></div>
-          <div className="w-px bg-gray-200 my-3 grow"></div>
-          <div className="w-3 aspect-square bg-blue-200 rounded-full"></div>
-          <div className="w-px bg-gray-200 my-3 grow"></div>
-          <div className="w-3 aspect-square bg-blue-200 rounded-full"></div>
+      <div className="justify-center items-center align-middle content-center lg:flex hidden">
+        <div className=" flex flex-col content-center items-center justify-evenly w-6">
+          <Timelinedot section={<ThesisSection />} />
+          <FillerBar height={"500px"} />
+          <Timelinedot section={<SpectrogramSection />} />
+          <FillerBar height={"500px"} />
+          <Timelinedot section={<></>} />
+          <FillerBar height={"100px"} />
+          <Timelinedot section={<></>} />
         </div>
       </div>
     </div>
@@ -57,48 +60,85 @@ const AcademiaHeader = ({ text }) => {
   );
 };
 
-function ThesisSection() {
+function SpectrogramSection() {
   // const [lang, setlang] = useState("english");
 
   return (
     <div className="absolute lg:w-2/3 md:w-[calc(100%-10rem)] w-[calc(100%-3rem)] h-56 flex flex-row justify-evenly lg:gap-16 gap-8 -mt-2">
       <div className="lg:w-1/2 w-full h-full flex flex-col justify-start content-end items-end">
-        <div className="flex flex-col content-start gap-3 w-full h-full">
-          
+        <div className="flex flex-col content-start items-end gap-3 w-full h-full">
           <div className="text-lg font-inter font-bold text-gray-800 text-right mb-3">
             {" "}
-            Masters' thesis : Automatic Music Tagging at Scale towards better
-            Musical recommendations
+            Artist classification through spectrogram learning
           </div>
           <div className="flex flex-row gap-3 text-[10px] font-inter text-blue-700 justify-end mb-5">
             <Academiatag text={"Music Information Retrieval"} />
             <Academiatag text={"Music Tagging"} />
             <Academiatag text={"Machine Learning"} />
-            <Academiatag text={"Music technology"} />
+            <Academiatag text={"Singing voice"} />
           </div>
+          <div className="flex flex-row justify-between items-center gap-3 w-3/4 mb-3">
+            <div className="h-px grow bg-gray-500"></div>
+            <div className="font-inter text-base text-gray-600">Context</div>
+            <div className="h-px grow bg-gray-500"></div>
+          </div>
+
+          <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-800 w-3/4 mb-5">
+            <p>
+              At the university of adelaide, I took a project-based course
+              titled <b className="text-blue-600">Applied machine learning</b>{" "}
+              from july 2021 to february 2022. The goal was to identify a
+              problem that could be solved with ML, research state of the art
+              and devise and implement a solution, including data sourcing and
+              processing. This was my first time combining machine learning and
+              music into what I didn't know at the time is essentially MIR.
+            </p>
+            <p>
+              In hindsight, the paper isn't innovative, and the method can
+              clearly be improved. High overfitting, too large of a test set,
+              questonably sourced data... My PC also broke down during training
+              so I couldn't iterate on models. But this is the project that
+              really made me want to pursue MIR.{" "}
+              <b className="font-bold text-blue-600">
+                This report and project earned me a 99/100
+              </b>
+            </p>
+          </div>
+
           <div className="flex flex-row gap-5 items-center justify-end">
-            <div className=" text-base font-inter text-right text-gray-500 mb-">
-              full text
-            </div>
-            <div className=" h-px w-12 bg-gray-400" />
-
-            <div className=" rounded-2xl px-3 py-2 bg-gray-100 flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-red-500 hover:text-red-600 transition-all duration-[30ms] items-center shadow-sm shadow-gray-300 group hover:bg-gray-0 cursor-pointer">
-              <BsFillFileEarmarkPdfFill size={18} />
-              <div className="font-inter text-gray-500 text-xs group-hover:text-gray-600 group-active:text-red-500">
-                Download
+            <a
+              href="/RecoNet.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" rounded-full px-3 py-2 bg-white flex flex-row gap-3 active:bg-red-500 active:scale-95 active:text-white select-none border-[1px] border-red-500 hover:border-red-400 text-red-500 hover:text-red-600 transition-all duration-[20ms] items-center shadow-sm shadow-gray-400 group hover:bg-gray-100 cursor-pointer"
+            >
+              <BsFileEarmarkPdf size={18} />
+              <div className="font-inter text-red-500 text-xs group-hover:text-red-600 group-active:text-white">
+                View pdf
               </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col mt-6 items-end gap-3">
-            <div className="text-base font-inter text-blue-500 font-bold text-right mb-3">
-              Table of contents
-            </div>
-            <Tocitem num={"1."} text={"State of the art - audio preprocessing"}/>
-            <Tocitem num={"2."} text={"State of the art - Music Tagging Models"}/>
-            <Tocitem num={"3."} text={"Implementation"}/>
-            <Tocitem num={"4."} text={"Pipeline design & Model selection"}/>
-            <Tocitem num={"5."} text={"Results"}/>
+            </a>
+            <a
+              href="/Deck.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" rounded-full px-3 py-2 bg-white flex flex-row gap-3 active:bg-orange-500 active:scale-95 active:text-white select-none border-[1px] border-orange-500 hover:border-orange-400 text-orange-500 hover:text-orange-600 transition-all duration-[20ms] items-center shadow-sm shadow-gray-400 group hover:bg-gray-100 cursor-pointer"
+            >
+              <SiMicrosoftpowerpoint size={18} />
+              <div className="font-inter text-orange-500 text-xs group-hover:text-orange-600 group-active:text-white">
+                View Slide Deck
+              </div>
+            </a>
+            <a
+              href="https://github.com/Pliploop/Spectrogram_Artist_Recognition"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" rounded-full px-3 py-2 bg-white flex flex-row gap-3 active:bg-purple-500 active:scale-95 active:text-white select-none border-[1px] border-purple-500 hover:border-purple-400 text-purple-500 hover:text-purple-600 transition-all duration-[20ms] items-center shadow-sm shadow-gray-400 group hover:bg-gray-100 cursor-pointer"
+            >
+              <VscGithub size={18} />
+              <div className="font-inter text-purple-500 text-xs group-hover:text-purple-600 group-active:text-white">
+                Github
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -110,87 +150,41 @@ function ThesisSection() {
           </div>
           <div className="h-px grow bg-gray-500"></div>
         </div>
-        <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-600">
+        <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-500">
           <p>
-            Recommendation systems have a notable and growing importance in the
-            music industry. Be it music streaming platforms, music creation
-            tools or music-related social network recommendations, recommender
-            systems are part of our everyday music life. Groover specifically is
-            a tech company aiming to create opportunities for independent music
-            artists by allowing them to send tracks to industry professionnals
-            to expand their network, receive feedback, or be promoted by said
-            curator. This puts Groover in a specific spot in the recommender
-            system space : recommending professionals, who are both users and
-            products, to users.
+            Shazam is a music-identifying app which functions through
+            deterministic fingerprinting of their immense database and
+            cross-correlating real-time audio buffers to identify an ambient
+            song. Despite the power of the algorithm, and the wide use, the
+            Shazam algorithm lacks robustness to real-life situa- tions such as
+            live performances or remixes. This prompts this project. This paper
+            focuses on the proceedings and results obtained over the course of
+            the project to replicate Shazam’s functionality through deep
+            learning and mel-spectrograms.
           </p>
           <p>
-            As a motivation to improve their current recommendation system, the
-            R&D team at Groover wants to include audio features within the
-            pipeline to 1. Denoise artist-chosen characteristics by basing
-            artist tags on deterministic representation extraction models and 2.
-            Providing a new feature of recommending relevant tags to artists
-            based on their sample tracks. It is in this context that this
-            master’s internship takes place. The goal is to research state of
-            the art of music audio preprocessing techniques and automatic music
-            tagging models for later implementation at scale into the
-            recommendation system. Music tagging is the task of teaching
-            learnable models to label music tracks with relevant labels, such as
-            acoustic characteristics, genres, subgenres, instruments, etc.
+            Through Literature overview, we isolate relevant Music Information
+            Retrieval methods and models, as well as pre-processing and
+            augmentation steps for audio data to be used in the project.
+            Accuracy comparison for these models allows us to zero in on a given
+            architecture, which presents both techni- cal novelty, and a basis
+            for relevant performance. Further- more, this allows us to establish
+            a baseline prediction for accuracy: 70%
           </p>
           <p>
-            A comprehensive study of the state of the art is conducted,
-            researching common audio preprocessing techniques in the context of
-            machine learning applied to audio, audio tagging models and their
-            performance on canonical datasets, and the available datasets to
-            construct our own tagging task based in the state of the art.
-          </p>
-          <p>
-            three datasets are exhibited that can be of use to this specific
-            tagging task. After model selection based on multiple considerations
-            3-4 models are selected to be benchmarked on a custom dataset. Four
-            tagging types are isolated to be benchmarked upon : Genres,
-            Subgenres, Mood/theme/instruments and All tags combined. A custom
-            dataset and split is built for all four of these tagging types. .
-            Trained models show competitive results with state of the art on
-            appropriate metrics with room for improvement based on the novel
-            task of music tagging proposed in this thesis. The interest of
-            models as frozen representation learners and standalone learnable
-            preprocessing blocks is argued. . Finally, the issue of multi
-            instance classification is tackled and it is shown using song-level
-            aggregation on the selected datasets that mean pooling results in
-            better performance overall on song-level evaluation.
+            Data sourcing and pre-processing is conducted to obtain
+            discographies for various artists, segmented audio clips of isolated
+            vocals are then fed to the aforementioned model. Through training,
+            the model obtains 68% accuracy on never-before seen test data,
+            despite technical difficulties The proposed model learns coherent
+            features, but not in- depth enough, which prompts thinking about
+            next steps for the project, which could have performed much better
+            with the necessary hindsight.
           </p>
         </div>
       </div>
     </div>
   );
 }
-
-const Academiatag = ({ text }) => {
-  return (
-    <div className="rounded-full px-2 py-1.5 bg-gray-100 shadow-sm shadow-gray-300 items-center justify-center">
-      {text}
-    </div>
-  );
-};
-
-const Tocitem = ({num,text,href}) => {
-  return (
-    <div className="flex flex-col w-3/4 justify-evenly">
-      <div className="flex flex-row w-full items-center">
-        <div className="font-mono font-bold text-base text-blue-600 mr-3">
-          {num}
-        </div>
-        <div className="font-mono text-xs text-gray-600">
-          {text}
-        </div>
-        <div className="h-px bg-gray-200 grow mx-5"></div>
-        <div className=" rounded-full p-2 flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-red-500 hover:text-red-600 transition-all duration-[30ms] items-center shadow-sm shadow-gray-300 group hover:bg-gray-0 cursor-pointer">
-          <BsFillFileEarmarkPdfFill size={14} />
-        </div>
-      </div>
-    </div>
-  );
-};
 
 export { AcademiaSection };

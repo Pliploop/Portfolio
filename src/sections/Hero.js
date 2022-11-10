@@ -50,14 +50,14 @@ export function HeroSection() {
             </p>
           </div>
           <div className="lg:hidden w-full lg:scale-100 scale-[80%] aspect-square group lg:m-0 lg:relative flex">
-          <div className="absolute h-20 w-20 mt-20 group-focus:ml-[-25px] transition-all duration-300 border-4 border-sky-400 rounded-full blur-[1px] group-focus:blur-sm" />
-          <div className="absolute h-32 w-20 mt-48 group-focus:h-36 transition-all duration-300 border-4 border-sky-600 rounded-full blur-[1px] group-focus:blur-sm" />
-          <div className="absolute h-20 w-20 mt-[230px] ml-[230px] transition-all duration-300 border-4 border-teal-500 rounded-xl blur-[2px] group-focus:blur-sm" />
-          <div className="absolute h-56 w-56 mt-2 group-focus:mt-0 ml-4 group-focus:ml-0 transition-all duration-300 border-4 border-teal-400 rounded-full blur-[3px] group-focus:blur-[5px] z-50" />
-          <div className="h-full scale-95 border-white border-8 group-focus:scale-100 transition-all shadow-lg group-focus:shadow-gray-400 aspect-square rounded-full overflow-hidden">
-            <img src={image} alt="me"></img>
+            <div className="absolute h-20 w-20 mt-20 group-focus:ml-[-25px] transition-all duration-300 border-4 border-sky-400 rounded-full blur-[1px] group-focus:blur-sm" />
+            <div className="absolute h-32 w-20 mt-48 group-focus:h-36 transition-all duration-300 border-4 border-sky-600 rounded-full blur-[1px] group-focus:blur-sm" />
+            <div className="absolute h-20 w-20 mt-[230px] ml-[230px] transition-all duration-300 border-4 border-teal-500 rounded-xl blur-[2px] group-focus:blur-sm" />
+            <div className="absolute h-56 w-56 mt-2 group-focus:mt-0 ml-4 group-focus:ml-0 transition-all duration-300 border-4 border-teal-400 rounded-full blur-[3px] group-focus:blur-[5px] z-50" />
+            <div className="h-full scale-95 border-white border-8 group-focus:scale-100 transition-all shadow-lg group-focus:shadow-gray-400 aspect-square rounded-full overflow-hidden">
+              <img src={image} alt="me"></img>
+            </div>
           </div>
-        </div>
           <ContactLinks />
         </div>
       </div>
@@ -107,9 +107,7 @@ const EducationSubSection = () => {
           <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
             Ecole Centrale de Lyon - France
           </p>
-          <p className="font-mono text-blue-500 text-xs mt-2">
-            GPA: 3.6/4.0
-          </p>
+          <p className="font-mono text-blue-500 text-xs mt-2">GPA: 3.6/4.0</p>
         </li>
         <li className="mb-3 ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -200,6 +198,8 @@ const ContactLinks = () => {
       <a
         className="lg:h-10 h-8 px-5 rounded-full bg-gradient-to-tr from-sky-300 to-teal-400 shadow-md border-gray-100 border-2 flex cursor-pointer hover:scale-105 transition-all hover:from-sky-400 hover:to-teal-500 text-white font-semibold active:scale-95"
         href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <span className="lg:text-sm text-xs self-center align-middle font-mono">
           My Resume

@@ -230,7 +230,7 @@ const ContactLinks = () => {
         </div>
       </a>
       <a
-        href="https://www.https://medium.com/@juj_guinot"
+        href="https://www.medium.com/@juj_guinot"
         className="contact-button group"
       >
         <BsMedium className="self-center" size={20} />

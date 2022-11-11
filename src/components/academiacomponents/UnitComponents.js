@@ -1,5 +1,7 @@
 import { BsFileEarmarkPdf } from "react-icons/bs";
 
+import { GrDown } from "react-icons/gr";
+
 const Academiatag = ({ text }) => {
   return (
     <div className="rounded-full px-2 py-1.5  shadow-sm shadow-gray-200 border-blue-500 border-[1px] items-center justify-center">
@@ -8,7 +10,7 @@ const Academiatag = ({ text }) => {
   );
 };
 
-const FillerBar = ({ height }) => {
+const FillerBar = ({ height = "n" }) => {
   let cn = `w-px bg-gray-200 my-3 grow h-[${height}] transition-all duration-200`;
   return <div className={cn} />;
 };
@@ -21,9 +23,15 @@ const Timelinedot = ({ section }) => {
   );
 };
 
+const Timelinedot2 = () => {
+  return (
+    <div className="w-3 aspect-square bg-blue-200 rounded-full flex justify-center my-2"></div>
+  );
+};
+
 const Tocitem = ({ num, text, href }) => {
   return (
-    <div className="flex flex-col w-3/4 justify-evenly">
+    <div className="flex flex-col w-full justify-evenly">
       <div className="flex flex-row w-full items-center">
         <div className="font-mono font-bold text-base text-blue-600 mr-3">
           {num}
@@ -38,4 +46,24 @@ const Tocitem = ({ num, text, href }) => {
   );
 };
 
-export { Academiatag, FillerBar, Timelinedot, Tocitem };
+const ShowMore = ({ isdeployed, setdeployed }) => {
+  return (
+    <div
+      className="flex flex-col items-center justify-center mt-5"
+      onClick={() => {
+        setdeployed(!isdeployed);
+      }}
+    >
+      <p className="text-gray-600 font-mono z-50" id="readmore">
+        {!isdeployed ? "read less" : "read more"}
+      </p>
+      <GrDown
+        className={`${
+          isdeployed ? "rotate-0" : "rotate-180"
+        } transition-all duration-300`}
+      />
+    </div>
+  );
+};
+
+export { Academiatag, FillerBar, Timelinedot, Tocitem, Timelinedot2, ShowMore };

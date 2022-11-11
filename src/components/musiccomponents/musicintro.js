@@ -6,7 +6,7 @@ import pc from "../../content/images/PC.png";
 const MusicIntro = () => {
     return (
       <div className=" flex lg:flex-row flex-col gap-10">
-        <div className=" lg:w-[27%] w-full lg:p-10 font-inter lg:text-sm text-sm lg:mb-0 mb-10">
+        <div className=" lg:w-[27%] w-full lg:p-10 font-inter lg:text-sm text-xs lg:mb-0 mb-10">
           <p className="text-justify mb-10">
             Music has been the focal point of my life for the past 5 years. I
             started playing music about 8 years ago with guitar, and have never
@@ -28,7 +28,7 @@ const MusicIntro = () => {
         <div className=" grow flex flex-col justify-between">
           <div className="h-auto  flex flex-row justify-start lg:mb-0 mb-20">
             <div className="w-1/4 aspect-square group lg:flex absolute lg:relative">
-              <div className="absolute mt-[-120px] lg:mt-[-70px] lg:ml-[-10px] ml-[-150px] group-hover:animate-pulse lg:scale-100 scale-100 flex lg:opacity-100 opacity-50">
+              <div className="absolute mt-[-120px] lg:mt-[-70px] lg:ml-[-10px] ml-[-150px] group-hover:animate-pulse lg:scale-[120%] scale-100 lg:opacity-60 opacity-20">
                 {svg1}
               </div>
               <img
@@ -105,7 +105,7 @@ const MusicIntro = () => {
               </ul>
             </div>
             <div className=" w-1/4 aspect-square group lg:flex absolute lg:relative">
-              <div className="absolute mt-[-70px] lg:ml-[-150px] ml-[-70px] group-hover:animate-pulse lg:scale-100 scale-100 lg:opacity-100 opacity-50 hidden">
+              <div className="absolute mt-[-70px] lg:ml-[-150px] ml-[-70px] group-hover:animate-pulse lg:scale-[150%] scale-100 lg:opacity-50 opacity-50 hidden lg:flex">
                 {svg2}
               </div>
               <img
@@ -117,7 +117,7 @@ const MusicIntro = () => {
           </div>
           <div className="h-auto  flex flex-row justify-start">
             <div className="w-1/4 aspect-square lg:flex lg:relative absolute">
-              <div className="absolute mt-[-70px] lg:ml-[0px] ml-[-200px] hover:animate-pulse scale-100 opacity-50 lg:opacity-100 ">
+              <div className="absolute mt-[-70px] lg:ml-[0px] ml-[-200px] hover:animate-pulse lg:scale-[150%] opacity-50 lg:opacity-50 ">
                 {svg3}
               </div>
               <img

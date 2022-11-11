@@ -62,16 +62,7 @@ export function HeroSection() {
         </div>
       </div>
       <div className="grow w-full flex flex-col lg:flex-row justify-between">
-        <div className="h-auto lg:mb-0 mb-10 grow lg:px-10">
-          <div className="flex flex-row align-middle">
-            <h2 className="font-inter text-lg font-semibold text-blue-400">
-              {" "}
-              Research interests
-            </h2>
-            <div className="mx-3 h-px grow bg-blue-400 self-center"></div>
-            <FaMicroscope size={18} className="self-center text-blue-400" />
-          </div>
-        </div>
+        <ResearchSection />
         <EducationSubSection />
         <ProfessionalSubsection />
       </div>
@@ -236,6 +227,43 @@ const ContactLinks = () => {
         <BsMedium className="self-center" size={20} />
         <div className="contact-tooltip">Medium</div>
       </a>
+    </div>
+  );
+};
+
+const ResearchSection = () => {
+  return (
+    <div className="h-auto lg:mb-0 mb-10 lg:w-2/3 grow lg:px-10">
+      <div className="flex flex-row align-middle mb-6">
+        <h2 className="font-inter text-lg font-semibold text-blue-400">
+          {" "}
+          Research interests
+        </h2>
+        <div className="mx-3 h-px grow bg-blue-400 self-center"></div>
+        <FaMicroscope size={18} className="self-center text-blue-400" />
+      </div>
+      <div className="text-xs text-gray-600 font-inter text-justify">
+        <p className="mb-6">
+          {" "}
+          My research interests lie at the intersection of music and Artificial
+          Intelligence / Machine Learning. This includes subflieds such as Music
+          Information Retrieval, Generative Modeling, Audio signal Processing. I
+          believe that advances in music technology powered by artficial
+          intelligence can be powerful catalysts for creative musical outlets.
+          As a vocalist, multiinstrumentalist, producer, mixing and mastering
+          aficionado, my interests span a large range of current studies in
+          music technology. Some of my specific areas of interest are:
+        </p>
+        <p>
+          {" "}
+          Recently, the surge in interest for AI generative creativity in the
+          image and video (DALL-E, Stable Diffusion) domain has fascinated me
+          and I would love to emulate the self-supervised multi-modal methods
+          and meta-learning studies in these domains to the field of music. Here
+          are a list of potential research projects I have - some based on these
+          self-supervised generative methods, some not.
+        </p>
+      </div>
     </div>
   );
 };

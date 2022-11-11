@@ -173,7 +173,7 @@ const MusicFeatured = () => {
                   />
                 </div>
                 <div className="flex flex-col lg:w-2/3">
-                  <div className="flex flex-row justify-items-start gap-3 h-8 flex-wrap mb-6">
+                  <div className="flex flex-row justify-items-start gap-3 lg:h-8 flex-wrap mb-6">
                     <div className="featured-tag-yellow">Production</div>
                     <div className="featured-tag-yellow">Mixing</div>
                     <div className="featured-tag-yellow">Mastering</div>

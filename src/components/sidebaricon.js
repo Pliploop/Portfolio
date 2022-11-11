@@ -10,7 +10,7 @@ const SidebarIcon = ({ icon, aimid, scrollid, visible, title, description }) => 
 
 
   return (
-    <div className="flex flex-row align-middle content-center justify-left group">
+    <div className="flex flex-row align-middle content-center lg:justify-left group">
       <div
         className={`${diff ? 'sidebar-icon-container-active' : 'sidebar-icon-container-inactive'} group`}
         onClick={() => {
@@ -26,9 +26,9 @@ const SidebarIcon = ({ icon, aimid, scrollid, visible, title, description }) => 
       </div>
     
     <div className="flex flex-col justify-start content-start h-auto grow">
-    <span className={`font-mono text-sm ml-6 mb-1 ${!diff ? 'sidebar-title-active' : ''}`}>{title}</span>
-    <span className={`absolute text-xs group-hover:pt-10 ml-6 transition-all duration-300  group-active:text-gray-500 cursor-default ${!diff ? 'sidebar-description-active' : 'sidebar-description-inactive'}`}>{description}</span>
-    {/* <div className="h-[2px] w-full bg-blue-400"></div> */}
+    <span className={`font-mono lg:flex hidden text-sm ml-6 mb-1 ${!diff ? 'sidebar-title-active' : ''}`}>{title}</span>
+    <span className={`absolute  text-xs group-hover:pt-10 ml-6 transition-all duration-300 lg:flex hidden group-active:text-gray-500 cursor-default ${!diff ? 'sidebar-description-active' : 'sidebar-description-inactive'}`}>{description}</span>
+    
     </div>
     
     </div>

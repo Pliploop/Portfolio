@@ -64,7 +64,7 @@
   }
 
   .commuzpinkrole {
-    @apply ml-[370px] absolute text-gray-600 font-inter lg:mt-[-100px] lg:ml-0 lg:items-center text-sm transition-all w-72 justify-end flex flex-col items-start;
+    @apply ml-[230px] absolute text-gray-600 font-inter lg:mt-[-100px] lg:ml-0 lg:items-center text-sm transition-all lg:w-72 w-40 justify-end flex flex-col items-start;
   }
 
   .featured-tag {
@@ -78,4 +78,8 @@
   .featured-tag-purple {
     @apply border-[1px] border-b-2 border-white bg-gradient-to-tr from-blue-300 to-purple-500 shadow-md text-white font-bold rounded-full px-5 p-2 font-mono text-[10px] cursor-default hover:scale-[101%] hover:from-blue-600 hover:shadow-gray-400 hover:to-purple-400 transition-all duration-75;
   }
+
+  /* * {
+    @apply border-[1px] border-red-500;
+  } */
 }

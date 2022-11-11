@@ -303,11 +303,11 @@ const MusicMixMaster = () => {
     }
     if (albumid === currentalbum - 1) {
       classname =
-        " absolute h-3/4 w-3/4 ml-[-40%] lg:mt-[25%] mt-[10%] z-0 blur-sm  transition-all ease-linear duration-150 pointer-events-none";
+        " absolute h-3/4 w-3/4 lg:ml-[-40%] ml-[-20%] lg:mt-[25%] mt-[10%] z-0 blur-sm  transition-all ease-linear duration-150 pointer-events-none";
     }
     if (albumid === currentalbum + 1) {
       classname =
-        "absolute h-3/4 w-3/4 z-0 blur-sm lg:mt-[25%] mt-[10%] ml-[65%] transition-all ease-linear duration-150 pointer-events-none";
+        "absolute h-3/4 w-3/4 z-0 blur-sm lg:mt-[25%] mt-[10%] lg:ml-[65%] ml-[45%] transition-all ease-linear duration-150 pointer-events-none";
     }
   
     return (

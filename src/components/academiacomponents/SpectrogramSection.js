@@ -1,14 +1,20 @@
-import { Timelinedot2, FillerBar, Academiatag, ShowMore } from "./UnitComponents";
+import {
+  Timelinedot2,
+  FillerBar,
+  Academiatag,
+  ShowMore,
+} from "./UnitComponents";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { SiMicrosoftpowerpoint } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
 import { useState } from "react";
 
 function SpectrogramSection() {
+  const [abstractdeployed, setabstractdeployed] = useState(true);
   // const [lang, setlang] = useState("english");
 
   return (
-    <div className="lg:w-full md:w-[calc(100%-10rem)] w-[calc(100%-3rem)] h-auto flex flex-row justify-evenly lg:gap-16 gap-8 -mt-2">
+    <div className="lg:w-full md:w-[calc(100%-10rem)] w-[calc(100%-3rem)] h-auto flex flex-row justify-evenly lg:gap-16 gap-8 -mt-2 mb-10">
       <div className="lg:w-1/2 w-full h-full flex flex-col justify-start content-end items-end">
         <div className="flex flex-col content-start items-end gap-3 w-full h-full">
           <div className="text-lg font-inter font-bold text-gray-800 text-right mb-3">
@@ -21,13 +27,13 @@ function SpectrogramSection() {
             <Academiatag text={"Machine Learning"} />
             <Academiatag text={"Singing voice"} />
           </div>
-          <div className="flex flex-row justify-between items-center gap-3 w-3/4 mb-3">
+          <div className="flex flex-row justify-between items-center gap-3 w-full mb-3">
             <div className="h-px grow bg-gray-500"></div>
             <div className="font-inter text-base text-gray-600">Context</div>
             <div className="h-px grow bg-gray-500"></div>
           </div>
 
-          <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-800 w-3/4 mb-5">
+          <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-800 w-full mb-5">
             <p>
               At the university of adelaide, I took a project-based course
               titled <b className="text-blue-600">Applied machine learning</b>{" "}
@@ -90,7 +96,7 @@ function SpectrogramSection() {
         <Timelinedot2 />
         <FillerBar />
       </div>
-      <div className="lg:w-1/2 w-full h-full flex flex-col justify-start content-end items-start">
+      <div className="w-1/2 flex flex-col justify-start content-end items-center mb-20">
         <div className="flex flex-row justify-between items-center gap-3 w-full mb-5">
           <div className="h-px grow bg-gray-500"></div>
           <div className="font-inter font-bold text-lg text-gray-600">
@@ -98,7 +104,16 @@ function SpectrogramSection() {
           </div>
           <div className="h-px grow bg-gray-500"></div>
         </div>
-        <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-500">
+        <div
+          className={`relative font-inter text-[14px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+            abstractdeployed ? "h-1/3" : "h-auto"
+          }`}
+        >
+          <div
+            className={`absolute bg-gradient-to-b from-transparent to-white z-50 h-full w-full transition-all duration-200 ease-linear ${
+              !abstractdeployed ? " opacity-0" : " opacity-100"
+            }`}
+          />
           <p>
             Shazam is a music-identifying app which functions through
             deterministic fingerprinting of their immense database and
@@ -115,8 +130,8 @@ function SpectrogramSection() {
             Retrieval methods and models, as well as pre-processing and
             augmentation steps for audio data to be used in the project.
             Accuracy comparison for these models allows us to zero in on a given
-            architecture, which presents both techni- cal novelty, and a basis
-            for relevant performance. Further- more, this allows us to establish
+            architecture, which presents both technical novelty, and a basis
+            for relevant performance. Furthermore, this allows us to establish
             a baseline prediction for accuracy: 70%
           </p>
           <p>
@@ -125,11 +140,15 @@ function SpectrogramSection() {
             vocals are then fed to the aforementioned model. Through training,
             the model obtains 68% accuracy on never-before seen test data,
             despite technical difficulties The proposed model learns coherent
-            features, but not in- depth enough, which prompts thinking about
+            features, but not in-depth enough, which prompts thinking about
             next steps for the project, which could have performed much better
             with the necessary hindsight.
           </p>
         </div>
+        <ShowMore
+          isdeployed={abstractdeployed}
+          setdeployed={setabstractdeployed}
+        />
       </div>
     </div>
   );
@@ -139,7 +158,7 @@ function SpectrogramSectionSmall() {
   const [abstractdeployed, setabstractdeployed] = useState(true);
 
   return (
-    <div className="w-full h-auto flex flex-row justify-start gap-8 -mt-2">
+    <div className="w-full h-auto flex flex-row justify-start gap-8 -mt-2 mb-10">
       <div className="flex flex-col items-center gap-0">
         <Timelinedot2 />
         <FillerBar />
@@ -233,7 +252,7 @@ function SpectrogramSectionSmall() {
             <div className="h-px grow bg-gray-500"></div>
           </div>
           <div
-            className={`relative font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+            className={`relative font-inter text-[12px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
               abstractdeployed ? "h-56" : "h-auto"
             }`}
           >
@@ -273,7 +292,10 @@ function SpectrogramSectionSmall() {
               performed much better with the necessary hindsight.
             </p>
           </div>
-          <ShowMore isdeployed={abstractdeployed} setdeployed={setabstractdeployed}/>
+          <ShowMore
+            isdeployed={abstractdeployed}
+            setdeployed={setabstractdeployed}
+          />
         </div>
       </div>
     </div>

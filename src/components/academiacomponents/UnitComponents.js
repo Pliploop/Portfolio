@@ -10,10 +10,9 @@ const Academiatag = ({ text }) => {
   );
 };
 
-
 const Academiatag2 = ({ text }) => {
   return (
-    <div className="rounded-full text-sm px-2 py-2  shadow-sm shadow-gray-200 border-blue-500 border-[1px] items-center justify-center">
+    <div className="rounded-full text-sm px-2 py-2 content-center text-center shadow-sm shadow-gray-200 border-blue-500 border-[1px] items-center justify-center">
       {text}
     </div>
   );
@@ -47,9 +46,14 @@ const Tocitem = ({ num, text, href }) => {
         </div>
         <div className="font-mono text-xs text-gray-600">{text}</div>
         <div className="h-px bg-gray-200 grow mx-5"></div>
-        <div className=" rounded-full p-2 px-5 flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-red-500 hover:text-red-600 transition-all duration-[30ms] items-center shadow-sm shadow-gray-300 group hover:bg-gray-0 cursor-pointer">
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" rounded-full p-2 px-5 flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-red-500 hover:text-red-600 transition-all duration-[30ms] border-[1px] border-red-500 active:border-gray-500 items-center shadow-gray-300 group hover:bg-gray-0 cursor-pointer"
+        >
           <BsFileEarmarkPdf size={14} />
-        </div>
+        </a>
       </div>
     </div>
   );
@@ -75,4 +79,12 @@ const ShowMore = ({ isdeployed, setdeployed }) => {
   );
 };
 
-export { Academiatag, Academiatag2, FillerBar, Timelinedot, Tocitem, Timelinedot2, ShowMore };
+export {
+  Academiatag,
+  Academiatag2,
+  FillerBar,
+  Timelinedot,
+  Tocitem,
+  Timelinedot2,
+  ShowMore,
+};

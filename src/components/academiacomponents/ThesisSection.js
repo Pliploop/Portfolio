@@ -23,7 +23,7 @@ function ThesisSection() {
           <div className="h-px grow bg-gray-500"></div>
         </div>
         <div
-          className={`relative font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+          className={`relative font-inter text-[13px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
             abstractdeployed ? "h-1/3" : "h-auto"
           }`}
         >
@@ -205,7 +205,7 @@ function ThesisSectionSmall() {
             <div className="h-px grow bg-gray-500"></div>
           </div>
           <div
-            className={`relative font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+            className={`relative font-inter text-[12px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
               abstractdeployed ? "h-56" : "h-auto"
             }`}
           >

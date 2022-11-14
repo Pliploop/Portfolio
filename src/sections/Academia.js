@@ -6,6 +6,8 @@ import {
   ThesisSection,
   ThesisSectionSmall,
 } from "../components/academiacomponents/ThesisSection";
+
+import { IRCAMSection, IRCAMSectionSmall } from "../components/academiacomponents/ircamSection";
 import SectionHeader from "../components/header";
 
 const AcademiaSection = () => {
@@ -41,12 +43,14 @@ const AcademiaSection = () => {
         <div className="justify-center items-center lg:flex flex-col hidden">
           <ThesisSection />
           <SpectrogramSection />
+          <IRCAMSection/>
         </div>
 
         <div className="justify-center items-center lg:hidden flex flex-col">
           {/* <ThesisSectionSmall /> */}
           <ThesisSectionSmall />
           <SpectrogramSectionSmall />
+          <IRCAMSectionSmall/>
         </div>
         {/* <div className="justify-center items-center align-middle content-center lg:flex hidden">
         <div className=" flex flex-col content-center items-center justify-evenly w-6">

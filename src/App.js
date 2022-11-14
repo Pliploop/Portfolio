@@ -58,7 +58,7 @@ function App() {
       className="flex lg:flex-row flex-col lg:gap-20 md:p-10 lg:p-20 p-0"
       id="root"
     >
-      <div className="grow h-auto flex flex-col gap-40 lg:mt-0 mt-20">
+      <div className="grow h-auto flex flex-col gap-20 lg:mt-0 mt-20">
         <div className="min-h-[calc(100vh-10rem)] lg:px-16 px-8" id="1">
           <HeroSection />
         </div>
@@ -110,7 +110,7 @@ function App() {
 
 const BigNav = ({ visible }) => {
   return (
-    <div className="h-[calc(100vh-10rem)] lg:w-[60%] sticky top-20 bottom-20 lg:flex flex-col content-between justify-between py-20 px-10 hidden">
+    <div className="h-[calc(100vh-10rem)] lg:w-[60%] top-20 bottom-20 sticky lg:flex flex-col content-between justify-between py-20 px-10 hidden">
       <SidebarIcon
         icon={<FaUserGraduate size={20}></FaUserGraduate>}
         aimid="root"

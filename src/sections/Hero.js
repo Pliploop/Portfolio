@@ -3,10 +3,12 @@ import { FaGraduationCap, FaLinkedinIn, FaMicroscope } from "react-icons/fa";
 import { GiSuitcase } from "react-icons/gi";
 import { BsGlobe, BsMedium } from "react-icons/bs";
 import { VscGithub } from "react-icons/vsc";
+import { HiMagnifyingGlassCircle } from "react-icons/hi2";
+import { Academiatag2 } from "../components/academiacomponents/UnitComponents";
 
 export function HeroSection() {
   return (
-    <div className="flex flex-col align-top justify-between lg:gap-20 gap-10 mt-16">
+    <div className="flex flex-col align-top justify-between lg:gap-10 gap-10 lg:mt-0 mt-10">
       <div className="w-full flex lg:flex-row justify-between">
         <div className="h-[330px] w-[330px] lg:scale-100 scale-[80%] aspect-square group absolute hidden lg:m-0 ml-[250px] mt-[420px] lg:relative lg:flex">
           <div className="absolute h-20 w-20 mt-20 group-hover:ml-[-25px] transition-all duration-300 border-4 border-sky-400 rounded-full blur-[1px] group-hover:blur-sm" />
@@ -63,16 +65,85 @@ export function HeroSection() {
       </div>
       <div className="grow w-full flex flex-col lg:flex-row justify-between">
         <ResearchSection />
-        <EducationSubSection />
-        <ProfessionalSubsection />
+        <div className="flex lg:flex-row flex-col lg:gap-10 gap-10 grow justify-between">
+          <EducationSubSection />
+          <ProfessionalSubsection />
+        </div>
       </div>
+      <ResearchIdeasSection />
     </div>
   );
 }
 
+const ResearchIdeasSection = () => {
+  return (
+    <div className="h-auto lg:mb-0  lg:w-full lg:px-4">
+      <div className="flex flex-row align-middle mb-5">
+        <h2 className="font-inter text-lg font-semibold text-blue-400">
+          {" "}
+          Research projects
+        </h2>
+        <div className="mx-3 h-px grow bg-blue-400 self-center"></div>
+        <HiMagnifyingGlassCircle size={24} className="self-center text-blue-400" />
+      </div>
+      <div className="flex flex-col gap-10">
+        <p className="w-full font-inter text-gray-600 text-justify text-sm">
+          {" "}
+          Recently, the surge in interest for AI generative creativity in the
+          image and video (DALL-E, Stable Diffusion) domain has fascinated me
+          and I would love to emulate the self-supervised multi-modal methods
+          and meta-learning studies in these domains to the field of music. Here
+          are a list of potential research projects I have - related to
+          diffusion
+        </p>
+        <div className="flex flex-row gap-10 font-inter text-blue-500 justify-center mb-5 flex-wrap">
+          <Academiatag2
+            text={
+              "(Text prompt / style) conditioned music / drum samples and grooves generation."
+            }
+          />
+          <Academiatag2
+            text={"Audio-informed time domain melody inpainting."}
+          />
+
+          <Academiatag2
+            text={"context-informed time domain chord inpainting."}
+          />
+          <Academiatag2
+            text={
+              "source separation on similar monophonic sources, e.g. separating harmony lines from backing vocals."
+            }
+          />
+          <Academiatag2 text={"Singing voice cloning"} />
+          <Academiatag2 text={"Vocal register Segmentation"} />
+
+          <Academiatag2 text={"Video classification for music tagging   "} />
+
+          <Academiatag2
+            text={"Melody-conditioned harmony line generation with diffusion"}
+          />
+        </div>
+        {/* <ul className="flex flex-row mb-5">
+          <li className="text-base text-blue-500 font-inter justify-center">
+            Research ideas
+            <div className="grow h-px bg-blue-500 my-3"></div>
+            <ul className="font-inter font-base text-sm text-gray-600  flex flex-col gap-2">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li>Vocal Register Segmentation</li>
+            </ul>
+          </li>
+        </ul> */}
+      </div>
+    </div>
+  );
+};
+
 const EducationSubSection = () => {
   return (
-    <div className="h-auto lg:mb-0 mb-10  lg:w-1/4 lg:px-10">
+    <div className="h-auto lg:mb-0  lg:w-full lg:px-4">
       <div className="flex flex-row align-middle">
         <h2 className="font-inter text-lg font-semibold text-blue-400">
           {" "}
@@ -85,33 +156,33 @@ const EducationSubSection = () => {
       <ul className="relative border-l border-gray-200 dark:border-gray-700 mt-3">
         <li className="mb-3 ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             2018-2022
           </time>
-          <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
             MSc Engineering
           </h3>
-          <h3 className="text-xs font-semibold text-gray-900 dark:text-white mb-2">
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
             BSc Engineering
           </h3>
 
-          <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
             Ecole Centrale de Lyon - France
           </p>
-          <p className="font-mono text-blue-500 text-xs mt-2">GPA: 3.6/4.0</p>
+          <p className="font-mono text-blue-500 text-sm mt-2">GPA: 3.6/4.0</p>
         </li>
         <li className="mb-3 ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             2021-2022 - Abroad
           </time>
-          <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
             MSc Engineering - Acoustics, Data Science
           </h3>
-          <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
             University of Adelaide - Australia
           </p>
-          <p className="font-mono text-blue-500 text-xs mt-2">GPA: 5.9/7</p>
+          <p className="font-mono text-blue-500 text-sm mt-2">GPA: 5.9/7</p>
         </li>
       </ul>
     </div>
@@ -120,7 +191,7 @@ const EducationSubSection = () => {
 
 const ProfessionalSubsection = () => {
   return (
-    <div className="h-auto lg:w-1/4 lg:px-10 lg:ml-10">
+    <div className="h-auto lg:w-full lg:px-4 lg:ml-0">
       <div className="flex flex-row align-middle">
         <h2 className="font-inter text-lg font-semibold text-blue-400">
           {" "}
@@ -132,49 +203,49 @@ const ProfessionalSubsection = () => {
       <ul className="relative border-l border-gray-200 dark:border-gray-700 mt-3">
         <li className="mb-3 ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             Oct 2022-Present
           </time>
-          <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
             Data Scientist
           </h3>
-          <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
             Believe
           </p>
         </li>
         <li className="mb-3 ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             Apr 2022- Oct 2022
           </time>
-          <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
             MIR Scientist / Data Scientist intern
           </h3>
-          <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
             Groover
           </p>
         </li>
         <li className="mb-3 ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             Mar 2021- Oct 2021
           </time>
-          <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
             Data Scientist intern
           </h3>
-          <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
             Artefact
           </p>
         </li>
         <li className="mb-3 ml-4">
           <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             Mar 2020- Oct 2020
           </time>
-          <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
             Research Intern
           </h3>
-          <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
             IRCAM
           </p>
         </li>
@@ -192,7 +263,7 @@ const ContactLinks = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span className="lg:text-sm text-xs self-center align-middle font-mono">
+        <span className="lg:text-sm text-sm self-center align-middle font-mono">
           My Resume
         </span>
       </a>
@@ -242,27 +313,41 @@ const ResearchSection = () => {
         <div className="mx-3 h-px grow bg-blue-400 self-center"></div>
         <FaMicroscope size={18} className="self-center text-blue-400" />
       </div>
-      <div className="text-xs text-gray-600 font-inter text-justify">
-        <p className="mb-6">
+      <div className="text-sm text-gray-600 font-inter text-justify">
+        <p className="lg:mb-6 mb-10">
           {" "}
           My research interests lie at the intersection of music and Artificial
-          Intelligence / Machine Learning. This includes subflieds such as Music
-          Information Retrieval, Generative Modeling, Audio signal Processing. I
-          believe that advances in music technology powered by artficial
-          intelligence can be powerful catalysts for creative musical outlets.
-          As a vocalist, multiinstrumentalist, producer, mixing and mastering
-          aficionado, my interests span a large range of current studies in
-          music technology. Some of my specific areas of interest are:
+          Intelligence / Machine Learning. This includes Music Information
+          Retrieval, Generative Modeling, Audio signal Processing. I believe
+          that advances in music technology powered by artficial intelligence
+          can be powerful catalysts for creative musical outlets. As a vocalist,
+          multiinstrumentalist, producer, mixing and mastering aficionado, my
+          interests span a large range of current studies in music technology:
         </p>
-        <p>
-          {" "}
-          Recently, the surge in interest for AI generative creativity in the
-          image and video (DALL-E, Stable Diffusion) domain has fascinated me
-          and I would love to emulate the self-supervised multi-modal methods
-          and meta-learning studies in these domains to the field of music. Here
-          are a list of potential research projects I have - some based on these
-          self-supervised generative methods, some not.
-        </p>
+        <ul className="flex lg:flex-row flex-col lg:gap-0 gap-10 justify-evenly mb-5 lg:px-0 px-10">
+          <li className="text-base text-blue-500 font-inter text-center">
+            {" "}
+            Music Information Retrieval
+            <div className="w-full h-px bg-blue-500 my-3"></div>
+            <ul className="font-inter font-base text-sm text-gray-600 flex flex-col gap-2">
+              <li> Music generation</li>
+              <li> Automatic Music Transcription</li>
+              <li> F0 estimation</li>
+              <li> Source Separation</li>
+              <li> Neural Audio Effects</li>
+            </ul>
+          </li>
+          <li className="text-base text-blue-500 font-inter text-center">
+            Methods
+            <div className="w-full h-px bg-blue-500 my-3"></div>
+            <ul className="font-inter font-base text-sm text-gray-600  flex flex-col gap-2">
+              <li>Contrastive learning</li>
+              <li>Active learning</li>
+              <li>Cross-modal learning</li>
+              <li>Few-shot learning</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   );

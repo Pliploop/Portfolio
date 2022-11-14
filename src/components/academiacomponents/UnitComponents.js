@@ -10,6 +10,15 @@ const Academiatag = ({ text }) => {
   );
 };
 
+
+const Academiatag2 = ({ text }) => {
+  return (
+    <div className="rounded-full text-sm px-2 py-2  shadow-sm shadow-gray-200 border-blue-500 border-[1px] items-center justify-center">
+      {text}
+    </div>
+  );
+};
+
 const FillerBar = ({ height = "n" }) => {
   let cn = `w-px bg-gray-200 my-3 grow h-[${height}] transition-all duration-200`;
   return <div className={cn} />;
@@ -66,4 +75,4 @@ const ShowMore = ({ isdeployed, setdeployed }) => {
   );
 };
 
-export { Academiatag, FillerBar, Timelinedot, Tocitem, Timelinedot2, ShowMore };
+export { Academiatag, Academiatag2, FillerBar, Timelinedot, Tocitem, Timelinedot2, ShowMore };

@@ -10,7 +10,7 @@ import SectionHeader from "../components/header";
 
 const AcademiaSection = () => {
   return (
-    <div>
+    <div className="">
       <AcademiaHeader text={"Writing samples"} />
       <div className="lg:px-10 w-full mb-56 lg:text-sm text-xs text-gray-600 font-inter">
         <div className="w-full mb-3 text-justify">

@@ -98,7 +98,7 @@ function ThesisSection() {
             Masters' thesis : Automatic Music Tagging at Scale towards better
             Musical recommendations
           </div>
-          <div className="flex flex-row gap-3 text-[10px] font-inter text-blue-700 justify-start mb-5">
+          <div className="flex flex-row gap-3 text-[10px] font-inter text-blue-700 justify-start mb-5 flex-wrap">
             <Academiatag text={"Music Information Retrieval"} />
             <Academiatag text={"Music Tagging"} />
             <Academiatag text={"Machine Learning"} />

@@ -136,7 +136,7 @@ function SpectrogramSection() {
 }
 
 function SpectrogramSectionSmall() {
-  const [abstractdeployed, setabstractdeployed] = useState(false);
+  const [abstractdeployed, setabstractdeployed] = useState(true);
 
   return (
     <div className="w-full h-auto flex flex-row justify-start gap-8 -mt-2">
@@ -165,7 +165,7 @@ function SpectrogramSectionSmall() {
 
             <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-800 mb-5">
               <p>
-                At the university of adelaide, I took a project-based course
+                At the university of Adelaide, I took a project-based course
                 titled <b className="text-blue-600">Applied machine learning</b>{" "}
                 from july 2021 to february 2022. The goal was to identify a
                 problem that could be solved with ML, research state of the art

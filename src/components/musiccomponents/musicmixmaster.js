@@ -1,4 +1,4 @@
-import { GrLinkNext, GrDown } from "react-icons/gr";
+import { GrLinkNext } from "react-icons/gr";
 import { IoIosMusicalNotes, IoIosMusicalNote } from "react-icons/io";
 import { MdGraphicEq } from "react-icons/md";
 import { FaPenNib } from "react-icons/fa";

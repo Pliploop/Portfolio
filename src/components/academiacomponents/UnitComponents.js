@@ -1,6 +1,7 @@
 import { BsFileEarmarkPdf } from "react-icons/bs";
 
 import { GrDown } from "react-icons/gr";
+import { VscGithub } from "react-icons/vsc";
 
 const Academiatag = ({ text }) => {
   return (
@@ -46,16 +47,36 @@ const Tocitem = ({ num, text, href }) => {
         </div>
         <div className="font-mono text-xs text-gray-600">{text}</div>
         <div className="h-px bg-gray-200 grow mx-5"></div>
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className=" rounded-full p-2 px-5 flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-red-500 hover:text-red-600 transition-all duration-[30ms] border-[1px] border-red-500 active:border-gray-500 items-center shadow-gray-300 group hover:bg-gray-0 cursor-pointer"
-        >
-          <BsFileEarmarkPdf size={14} />
-        </a>
+        <Pdfbutton href={href}/>
       </div>
     </div>
+  );
+};
+
+const Pdfbutton = ({href}) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className=" rounded-full p-2 px-5 justify-center flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-red-500 hover:text-red-600 transition-all duration-[30ms] border-[1px] border-red-500 active:border-gray-500 items-center shadow-gray-300 group hover:bg-gray-0 cursor-pointer"
+    >
+      <BsFileEarmarkPdf size={14} />
+    </a>
+  );
+};
+
+
+const GithubButton = ({href}) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className=" rounded-full p-2 px-5 justify-center flex flex-row gap-3 active:bg-white active:scale-95 active:text-gray-600 select-none text-purple-500 hover:text-purple-600 transition-all duration-[30ms] border-[1px] border-purple-500 active:border-gray-500 items-center shadow-gray-300 group hover:bg-gray-0 cursor-pointer"
+    >
+      <VscGithub size={14} />
+    </a>
   );
 };
 
@@ -79,7 +100,7 @@ const ShowMore = ({ isdeployed, setdeployed }) => {
   );
 };
 
-const DeployGradient = ({abstractdeployed}) => {
+const DeployGradient = ({ abstractdeployed }) => {
   return (
     <div
       className={`absolute bg-gradient-to-b from-transparent to-white z-40 h-full w-full transition-all duration-200 ease-linear ${
@@ -97,5 +118,7 @@ export {
   Tocitem,
   Timelinedot2,
   ShowMore,
-  DeployGradient
+  DeployGradient,
+  Pdfbutton,
+  GithubButton
 };

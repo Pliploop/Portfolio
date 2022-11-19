@@ -147,7 +147,7 @@ const BigNav = ({ visible }) => {
 
 const SmallNav = (visible) => {
   return (
-    <nav className="bg-white w-full py-2.5 fixed border-b z-50 border-gray-200 lg:hidden">
+    <nav className="bg-white backdrop-blur-md bg-opacity-80 w-full py-2.5 fixed border-b z-50 border-gray-200 lg:hidden">
       <div className="flex flex-row justify-between py-3 px-5">
         <SidebarIcon
           icon={<FaUserGraduate size={20}></FaUserGraduate>}

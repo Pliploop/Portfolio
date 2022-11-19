@@ -52,7 +52,7 @@
   }
 
   .section-title {
-    @apply lg:text-5xl text-4xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-inter font-bold;
+    @apply lg:text-5xl text-3xl bg-gradient-to-tr from-sky-400 to-teal-400 text-transparent bg-clip-text font-inter font-bold;
   }
 
   .section-subtitle {
@@ -80,7 +80,7 @@
   }
 
   .subnav-tag {
-    @apply cursor-pointer text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 border-[1px] border-gray-500 p-2 px-3 rounded-full hover:border-blue-700;
+    @apply bg-white cursor-pointer text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 border-[1px] border-gray-500 p-2 px-3 rounded-full hover:border-blue-700;
   }
 
   /* * {

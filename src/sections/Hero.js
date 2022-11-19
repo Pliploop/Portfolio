@@ -32,15 +32,15 @@ export function HeroSection() {
               music and AI, and I believe research in those fields is my
               vocation. I'm aiming to undertake a Music Information Retrieval
               oriented PhD program in september 2023 to extend my understanding
-              of music and research. I'm a self taught guitarist, bassist
+              of music and research. I'm a self taught guitarist, bassist,
               vocalist, pianist, producer and DJ of 10 years.
             </p>
             <br />
             <br />
             <p className="text-sm text-gray-600 text-justify">
               {" "}
-              On this website you'll find my academic writings as well as music
-              I've either made, arranged, performed or mixed and mastered. This
+              On this website you'll find my academic writing sample as well as music
+              I've either made, arranged, performed, mixed and/or mastered. This
               is an academia-oriented portfolio, so for further info and
               projects you can check out{" "}
               <a

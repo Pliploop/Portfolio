@@ -67,7 +67,7 @@ const ShowMore = ({ isdeployed, setdeployed }) => {
         setdeployed(!isdeployed);
       }}
     >
-      <p className="text-gray-600 font-mono z-50" id="readmore">
+      <p className="text-gray-600 font-mono z-40" id="readmore">
         {!isdeployed ? "read less" : "read more"}
       </p>
       <GrDown
@@ -79,6 +79,16 @@ const ShowMore = ({ isdeployed, setdeployed }) => {
   );
 };
 
+const DeployGradient = ({abstractdeployed}) => {
+  return (
+    <div
+      className={`absolute bg-gradient-to-b from-transparent to-white z-40 h-full w-full transition-all duration-200 ease-linear ${
+        !abstractdeployed ? " opacity-0" : " opacity-100"
+      }`}
+    />
+  );
+};
+
 export {
   Academiatag,
   Academiatag2,
@@ -87,4 +97,5 @@ export {
   Tocitem,
   Timelinedot2,
   ShowMore,
+  DeployGradient
 };

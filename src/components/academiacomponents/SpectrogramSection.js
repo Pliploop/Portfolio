@@ -3,6 +3,7 @@ import {
   FillerBar,
   Academiatag,
   ShowMore,
+  DeployGradient,
 } from "./UnitComponents";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { SiMicrosoftpowerpoint } from "react-icons/si";
@@ -15,6 +16,10 @@ function SpectrogramSection() {
 
   return (
     <div className="lg:w-full md:w-[calc(100%-10rem)] w-[calc(100%-3rem)] h-auto flex flex-row justify-evenly lg:gap-16 gap-8 -mt-2 mb-10">
+      <div
+        className="absolute show -mt-40 h-10 w-10 invisible"
+        id="spectrogram"
+      />
       <div className="lg:w-1/2 w-full h-full flex flex-col justify-start content-end items-end">
         <div className="flex flex-col content-start items-end gap-3 w-full h-full">
           <div className="text-lg font-inter font-bold text-gray-800 text-right mb-3">
@@ -109,11 +114,7 @@ function SpectrogramSection() {
             abstractdeployed ? "h-1/3" : "h-auto"
           }`}
         >
-          <div
-            className={`absolute bg-gradient-to-b from-transparent to-white z-50 h-full w-full transition-all duration-200 ease-linear ${
-              !abstractdeployed ? " opacity-0" : " opacity-100"
-            }`}
-          />
+          <DeployGradient abstractdeployed={abstractdeployed} />
           <p>
             Shazam is a music-identifying app which functions through
             deterministic fingerprinting of their immense database and
@@ -130,9 +131,9 @@ function SpectrogramSection() {
             Retrieval methods and models, as well as pre-processing and
             augmentation steps for audio data to be used in the project.
             Accuracy comparison for these models allows us to zero in on a given
-            architecture, which presents both technical novelty, and a basis
-            for relevant performance. Furthermore, this allows us to establish
-            a baseline prediction for accuracy: 70%
+            architecture, which presents both technical novelty, and a basis for
+            relevant performance. Furthermore, this allows us to establish a
+            baseline prediction for accuracy: 70%
           </p>
           <p>
             Data sourcing and pre-processing is conducted to obtain
@@ -140,9 +141,9 @@ function SpectrogramSection() {
             vocals are then fed to the aforementioned model. Through training,
             the model obtains 68% accuracy on never-before seen test data,
             despite technical difficulties The proposed model learns coherent
-            features, but not in-depth enough, which prompts thinking about
-            next steps for the project, which could have performed much better
-            with the necessary hindsight.
+            features, but not in-depth enough, which prompts thinking about next
+            steps for the project, which could have performed much better with
+            the necessary hindsight.
           </p>
         </div>
         <ShowMore
@@ -256,11 +257,7 @@ function SpectrogramSectionSmall() {
               abstractdeployed ? "h-56" : "h-auto"
             }`}
           >
-            <div
-              className={`absolute bg-gradient-to-b from-transparent to-white z-50 h-full w-full transition-all duration-200 ease-linear ${
-                !abstractdeployed ? " opacity-0" : " opacity-100"
-              }`}
-            />
+            <DeployGradient abstractdeployed={abstractdeployed} />
             <p>
               Shazam is a music-identifying app which functions through
               deterministic fingerprinting of their immense database and

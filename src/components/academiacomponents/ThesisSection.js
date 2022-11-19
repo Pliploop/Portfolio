@@ -6,6 +6,7 @@ import {
   Academiatag,
   Tocitem,
   ShowMore,
+  DeployGradient,
 } from "./UnitComponents";
 
 function ThesisSection() {
@@ -14,6 +15,7 @@ function ThesisSection() {
 
   return (
     <div className="w-full flex flex-row justify-evenly lg:gap-16 gap-8 -mt-2">
+      <div className="absolute show -mt-40 h-10 w-10 invisible" id="thesis" />
       <div className="w-1/2 flex flex-col justify-start content-end items-center mb-20">
         <div className="flex flex-row justify-between items-center gap-3 w-full mb-5">
           <div className="h-px grow bg-gray-500"></div>
@@ -27,11 +29,7 @@ function ThesisSection() {
             abstractdeployed ? "h-1/3" : "h-auto"
           }`}
         >
-          <div
-            className={`absolute bg-gradient-to-b from-transparent to-white z-50 h-full w-full transition-all duration-200 ease-linear ${
-              !abstractdeployed ? " opacity-0" : " opacity-100"
-            }`}
-          />
+          <DeployGradient abstractdeployed={abstractdeployed} />
           <p>
             Recommendation systems have a notable and growing importance in the
             music industry. Be it music streaming platforms, music creation
@@ -209,11 +207,7 @@ function ThesisSectionSmall() {
               abstractdeployed ? "h-56" : "h-auto"
             }`}
           >
-            <div
-              className={`absolute bg-gradient-to-b from-transparent to-white z-50 h-full w-full transition-all duration-200 ease-linear ${
-                !abstractdeployed ? " opacity-0" : " opacity-100"
-              }`}
-            />
+            <DeployGradient abstractdeployed={abstractdeployed} />
             <p>
               Recommendation systems have a notable and growing importance in
               the music industry. Be it music streaming platforms, music

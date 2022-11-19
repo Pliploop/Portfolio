@@ -1,26 +1,102 @@
-import {GrDown } from "react-icons/gr";
+import { GrDown } from "react-icons/gr";
 import SectionHeader from "../components/header";
 import ReactPlayer from "react-player";
 import { MusicIntro } from "../components/musiccomponents/musicintro";
 import { MusicArranged } from "../components/musiccomponents/musicarranged";
 import { MusicMixMaster } from "../components/musiccomponents/musicmixmaster";
 
+const scrollto = (id) => {
+  console.log("scrolling to " + id);
+  let element = document.getElementById(id);
+  element.scrollIntoView({ behavior: "smooth" });
+};
+
+const MusicNav = () => {
+  return (
+    <nav class="bg-white px-10 py-5 dark:bg-gray-900 sticky grow z-50 top-0 left-0 border-b border-gray-200 mb-20 hidden lg:flex">
+      <div class="container flex flex-wrap items-center justify-between mx-auto font-inter">
+        <div
+          onClick={() => {
+            scrollto("3");
+          }}
+          class="flex items-center cursor-pointer"
+        >
+          <span class="self-center text-xl font-semibold whitespace-nowrap hover:text-blue-500 active:scale-95 transition-all  duration-[20ms] active:text-blue-700">
+            My Music
+          </span>
+        </div>
+
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <div
+                class="subnav-tag"
+                onClick={() => {
+                  scrollto("featured");
+                }}
+              >
+                Featured
+              </div>
+            </li>
+            <li>
+              <div
+                class="subnav-tag"
+                onClick={() => {
+                  scrollto("mixmaster");
+                }}
+              >
+                Mix-mastering
+              </div>
+            </li>
+            <li>
+              <div
+                class="subnav-tag"
+                onClick={() => {
+                  scrollto("arrangements");
+                }}
+              >
+                Arrangements
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
 export function MusicSection() {
   return (
-    <div>
-      <div className="flex flex-col w-full h-full mb-40 pt-16">
-        <MusicHeader text="My Music" />
-        <MusicIntro />
-      </div>
+    <div className="w-full h-full pt-16">
+      {/* <div className="flex flex-col mb-40 pt-16"> */}
+      <MusicHeader text="My Music" />
+      <MusicNav />
+      <MusicIntro />
+      {/* </div> */}
       <div className="flex flex-col w-full  mb-20">
+      <div
+          className="absolute show -mt-40 h-10 w-10 invisible"
+          id="featured"
+        />
         <MusicHeader text={"Featured"} />
         <MusicFeatured />
       </div>
       <div className="flex flex-col w-full  mb-20">
+      <div
+          className="absolute show -mt-40 h-10 w-10 invisible"
+          id="mixmaster"
+        />
         <MusicHeader text={"Mix & Mastering"} />
         <MusicMixMaster />
       </div>
       <div className="flex flex-col w-full  mb-20">
+        <div
+          className="absolute show -mt-40 h-10 w-10 invisible"
+          id="arrangements"
+        />
         <MusicHeader text={"Arrangements"} />
         <MusicArranged />
       </div>
@@ -69,7 +145,7 @@ const MusicFeatured = () => {
     }
   }
   return (
-    <div className=" flex lg:flex-col flex-col gap-14 w-full">
+    <div className=" flex lg:flex-col flex-col gap-14 w-full lg:px-10">
       <div className="flex lg:flex-row flex-col w-full h-auto gap-10">
         <div className="flex flex-col lg:w-3/4 h-full pb-0">
           <div className="lg:h-full w-full border-[1px] border-emerald-300 border-b-[6px] cursor-pointer text-gray-600 hover:shadow-lg hover:scale-[102%] hover:border-emerald-500 transition-all duration-100 shadow-md rounded-3xl p-5">
@@ -113,7 +189,7 @@ const MusicFeatured = () => {
               className="flex flex-col items-center justify-center mt-5 lg:hidden"
               onClick={() => toggleAztecText()}
             >
-              <p className="text-gray-600 font-mono z-50" id="readmore">
+              <p className="text-gray-600 font-mono z-40" id="readmore">
                 read more
               </p>
               <GrDown

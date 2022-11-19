@@ -7,14 +7,101 @@ import {
   ThesisSectionSmall,
 } from "../components/academiacomponents/ThesisSection";
 
-import { IRCAMSection, IRCAMSectionSmall } from "../components/academiacomponents/ircamSection";
+import {
+  IRCAMSection,
+  IRCAMSectionSmall,
+} from "../components/academiacomponents/ircamSection";
 import SectionHeader from "../components/header";
+
+const scrollto = (id) => {
+  console.log("scrolling to " + id);
+  let element = document.getElementById(id);
+  element.scrollIntoView({ behavior: "smooth" });
+};
+
+const AcademiaNav = () => {
+  return (
+    <nav class="bg-white px-10 py-5 dark:bg-gray-900 sticky grow z-50 top-0 left-0 border-b border-gray-200 mb-20 hidden lg:flex">
+      <div class="container flex flex-wrap items-center justify-between mx-auto font-inter">
+        <div
+          onClick={() => {
+            scrollto("2");
+          }}
+          class="flex items-center cursor-pointer"
+        >
+          <span class="self-center text-xl font-semibold whitespace-nowrap hover:text-blue-500 active:scale-95 transition-all  duration-[20ms] active:text-blue-700">
+            Writing samples
+          </span>
+        </div>
+
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <div
+                class="subnav-tag"
+                onClick={() => {
+                  scrollto("thesis");
+                }}
+              >
+                Masters' thesis
+              </div>
+            </li>
+            <li>
+              <div
+                class="subnav-tag"
+                onClick={() => {
+                  scrollto("spectrogram");
+                }}
+              >
+                Vocalist classification
+              </div>
+            </li>
+            <li>
+              <div
+                class="subnav-tag"
+                onClick={() => {
+                  scrollto("ircam");
+                }}
+              >
+                IRCAM research internship
+              </div>
+            </li>
+            <li>
+              <div
+                class="subnav-tag"
+                onClick={() => {
+                  scrollto("assignments");
+                }}
+              >
+                Assignments
+              </div>
+            </li>
+            <li>
+              <div
+                class="subnav-tag"
+                onClick={() => {
+                  scrollto("diode");
+                }}
+              >
+                Acoustic Diode
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
 const AcademiaSection = () => {
   return (
     <div className="">
       <AcademiaHeader text={"Writing samples"} />
-      <div className="lg:px-10 w-full mb-56 lg:text-sm text-xs text-gray-600 font-inter">
+      <AcademiaNav />
+      <div className="lg:px-10 w-full mb-0 lg:text-sm text-xs text-gray-600 font-inter">
         <div className="w-full mb-3 text-justify">
           Here you'll find some of the papers I wrote in an academic context.
           Though I do not have any published articles at the moment, I used my
@@ -41,8 +128,8 @@ const AcademiaSection = () => {
         </div>
 
         <div className="justify-center items-center lg:flex flex-col hidden">
-          <ThesisSection />
-          <SpectrogramSection />
+          <ThesisSection/>
+          <SpectrogramSection/>
           <IRCAMSection/>
         </div>
 
@@ -50,7 +137,7 @@ const AcademiaSection = () => {
           {/* <ThesisSectionSmall /> */}
           <ThesisSectionSmall />
           <SpectrogramSectionSmall />
-          <IRCAMSectionSmall/>
+          <IRCAMSectionSmall />
         </div>
         {/* <div className="justify-center items-center align-middle content-center lg:flex hidden">
         <div className=" flex flex-col content-center items-center justify-evenly w-6">

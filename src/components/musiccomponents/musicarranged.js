@@ -4,7 +4,11 @@ import ReactPlayer from "react-player";
 
 const MusicArranged = () => {
   return (
-    <div className="h-auto w-full flex lg:flex-row flex-col lg:justify-between gap-10">
+    <div className="h-auto w-full flex lg:flex-row flex-col lg:justify-between gap-10 lg:px-10">
+      <div
+        className="absolute show -mt-40 h-10 w-10 invisible"
+        id="arrangements"
+      />
       <div className="lg:w-1/3 h-full rounded-3xl flex flex-col border-[1px] hover:border-pink-600 hover:scale-[102%] border-pink-400 p-5 transition-all duration-75 border-b-4">
         <h2 className="text-lg font-inter font-bold text-pink-400 mb-3">
           Santiana - solo choir arrangement

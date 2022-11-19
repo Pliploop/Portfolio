@@ -110,7 +110,7 @@ function App() {
 
 const BigNav = ({ visible }) => {
   return (
-    <div className="h-[calc(100vh-10rem)] lg:w-[60%] top-20 bottom-20 sticky lg:flex flex-col content-between justify-between py-20 px-10 hidden">
+    <div className="h-[calc(100vh-10rem)] lg:w-[100%] top-20 bottom-20 sticky lg:flex flex-col content-between justify-between py-20 px-10 hidden">
       <SidebarIcon
         icon={<FaUserGraduate size={20}></FaUserGraduate>}
         aimid="root"

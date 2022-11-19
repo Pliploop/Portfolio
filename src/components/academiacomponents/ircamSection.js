@@ -6,6 +6,7 @@ import {
   Academiatag,
   Tocitem,
   ShowMore,
+  DeployGradient,
 } from "./UnitComponents";
 
 function IRCAMSection() {
@@ -14,6 +15,7 @@ function IRCAMSection() {
 
   return (
     <div className="w-full flex flex-row justify-evenly lg:gap-16 gap-8 -mt-2">
+      <div className="absolute show -mt-40 h-10 w-10 invisible" id="ircam"/>
       <div className="w-1/2 flex flex-col justify-start content-end items-center mb-20">
         <div className="flex flex-row justify-between items-center gap-3 w-full mb-5">
           <div className="h-px grow bg-gray-500"></div>
@@ -27,11 +29,7 @@ function IRCAMSection() {
             abstractdeployed ? "h-1/3" : "h-auto"
           }`}
         >
-          <div
-            className={`absolute bg-gradient-to-b from-transparent to-white z-50 h-full w-full transition-all duration-200 ease-linear ${
-              !abstractdeployed ? " opacity-0" : " opacity-100"
-            }`}
-          />
+          <DeployGradient abstractdeployed={abstractdeployed} />
           <p>
             This paper aims to exhibit theoretical implementation of active
             control of the first vibrational modes of cello strings via state
@@ -200,11 +198,7 @@ function IRCAMSectionSmall() {
               abstractdeployed ? "h-56" : "h-auto"
             }`}
           >
-            <div
-              className={`absolute bg-gradient-to-b from-transparent to-white z-50 h-full w-full transition-all duration-200 ease-linear ${
-                !abstractdeployed ? " opacity-0" : " opacity-100"
-              }`}
-            />
+            <DeployGradient abstractdeployed={abstractdeployed} />
             <p>
               This paper aims to exhibit theoretical implementation of active
               control of the first vibrational modes of cello strings via state

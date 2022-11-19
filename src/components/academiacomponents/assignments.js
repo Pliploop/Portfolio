@@ -2,15 +2,9 @@ import {
   Timelinedot2,
   FillerBar,
   Academiatag,
-  ShowMore,
-  DeployGradient,
   Pdfbutton,
   GithubButton,
 } from "./UnitComponents";
-import { BsFileEarmarkPdf } from "react-icons/bs";
-import { SiMicrosoftpowerpoint } from "react-icons/si";
-import { VscGithub } from "react-icons/vsc";
-import { useState } from "react";
 
 function AssignmentSection() {
   return (

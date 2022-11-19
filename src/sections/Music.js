@@ -242,7 +242,7 @@ const MusicFeatured = () => {
               <div className="flex lg:flex-row flex-col gap-5 w-full">
                 <div className="aspect-square lg:w-56 w-full rounded-2xl overflow-clip mb-5 shadow-md">
                   <ReactPlayer
-                    className="w-full h-12"
+                    
                     height={"100%"}
                     width={"100%"}
                     url="https://soundcloud.com/jujgui/likethat-remastered"

@@ -63,7 +63,7 @@ export function HeroSection() {
           <ContactLinks />
         </div>
       </div>
-      <div className="grow w-full flex flex-col lg:flex-row justify-between">
+      <div className="grow w-full flex flex-col lg:flex-row justify-between mb-20">
         <ResearchSection />
         <div className="flex lg:flex-row flex-col lg:gap-10 gap-10 grow justify-between">
           <EducationSubSection />

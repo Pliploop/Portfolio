@@ -60,9 +60,9 @@ const MusicMixMaster = () => {
                 <div className="items-center justify-center h-16 w-16 border-2 border-gray-500 hidden lg:flex rounded-full">
                   <GrLinkNext size={20}></GrLinkNext>
                 </div>
-                <div className="items-center justify-center h-16 mb-10 w-16 border-2 border-gray-500 lg:hidden flex rounded-full">
+                {/* <div className="items-center justify-center h-16 mb-10 w-16 border-2 border-gray-500 lg:hidden flex rounded-full">
                   <GrDown size={20}></GrDown>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="w-full p-5 lg:px-10 flex flex-col lg:flex-row justify-between lg:mb-10 lg:h-auto  h-[500px]">

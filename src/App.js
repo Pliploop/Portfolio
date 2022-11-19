@@ -110,7 +110,7 @@ function App() {
 
 const BigNav = ({ visible }) => {
   return (
-    <div className="h-[calc(100vh-10rem)] lg:w-[100%] top-20 bottom-20 sticky lg:flex flex-col content-between justify-between py-20 px-10 hidden">
+    <div className="h-[calc(100vh-10rem)] lg:w-[100%] top-20 bottom-20 sticky lg:flex flex-col content-between justify-between py-10 pt-5 px-10 hidden">
       <SidebarIcon
         icon={<FaUserGraduate size={20}></FaUserGraduate>}
         aimid="root"
@@ -147,7 +147,7 @@ const BigNav = ({ visible }) => {
 
 const SmallNav = (visible) => {
   return (
-    <nav className="bg-white w-full py-2.5 fixed shadow-lg shadow-gray-200 border-b z-50 border-gray-200 lg:hidden">
+    <nav className="bg-white w-full py-2.5 fixed border-b z-50 border-gray-200 lg:hidden">
       <div className="flex flex-row justify-between py-3 px-5">
         <SidebarIcon
           icon={<FaUserGraduate size={20}></FaUserGraduate>}

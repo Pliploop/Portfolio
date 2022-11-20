@@ -21,7 +21,7 @@ function AssignmentSection() {
             <div className="h-px grow bg-gray-500"></div>
           </div>
 
-          <div className="font-inter text-[12px] text-justify flex flex-col gap-3 text-gray-800 w-full mb-5">
+          <div className="font-inter text-base text-justify flex flex-col gap-3 text-gray-800 w-full mb-5">
             <p>
               Over the course of my graduate studies at Ecole Centrale de Lyon,
               I completed multiple assignments. Though not research related they
@@ -48,25 +48,29 @@ function AssignmentSection() {
         <Assignment
           name={"Frequency Analysis of Musical sounds"}
           grade={"91% (A)"}
-          tags={["Musical Acoustics", "Signal processing", "Lyon"]}
+          tags={["Musical Acoustics", "Signal processing"]}
           github={"https://github.com/Pliploop/Projet-AcouMus"}
+          href={"./freq.pdf"}
         />
         <Assignment
           name={"RNN for stock price prediction"}
           grade={"103% (A+)"}
-          tags={["Machine Learning", "Python", "Adelaide"]}
+          tags={["Machine Learning", "Python"]}
           github={"https://github.com/Pliploop/Stock_Prediction_RNN"}
+          href={"./RNN.pdf"}
         />
         <Assignment
           name={"A study on tonal noise control"}
           grade={"85% (B+)"}
-          tags={["Acoustics", "Signal processing", "Adelaide"]}
+          tags={["Acoustics", "Signal processing"]}
+          href={"./tonal.pdf"}
         />
         <Assignment
           name={"CNN for multiclass image classification"}
           grade={"120% (A+)"}
-          tags={["Machine Learning", "Python", "Adelaide"]}
+          tags={["Machine Learning", "Python"]}
           github={"https://github.com/Pliploop/ConvNN_From_Scratch"}
+          href={"./cnn.pdf"}
         />
       </div>
     </div>
@@ -118,7 +122,7 @@ function AssignmentSectionSmall() {
               <div className="h-px grow bg-gray-500"></div>
             </div>
 
-            <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-800 mb-5">
+            <div className="font-inter text-sm text-justify flex flex-col gap-3 text-gray-800 mb-5">
               <p>
                 Over the course of my graduate studies at Ecole Centrale de
                 Lyon, I completed multiple assignments. Though not research
@@ -137,23 +141,27 @@ function AssignmentSectionSmall() {
               grade={"91% (A)"}
               tags={["Musical Acoustics", "Signal processing"]}
               github={"https://github.com/Pliploop/Projet-AcouMus"}
+              href={"./freq.pdf"}
             />
             <Assignment
               name={"RNN for stock price prediction"}
               grade={"103% (A+)"}
               tags={["Machine Learning", "Python"]}
               github={"https://github.com/Pliploop/Stock_Prediction_RNN"}
+              href={"./RNN.pdf"}
             />
             <Assignment
               name={"A study on tonal noise control"}
               grade={"85% (B+)"}
               tags={["Acoustics", "Signal processing"]}
+              href={"./tonal.pdf"}
             />
             <Assignment
               name={"CNN for multiclass image classification"}
               grade={"120% (A+)"}
               tags={["Machine Learning", "Python"]}
               github={"https://github.com/Pliploop/ConvNN_From_Scratch"}
+              href={"./cnn.pdf"}
             />
           </div>
         </div>

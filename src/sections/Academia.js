@@ -102,7 +102,7 @@ const AcademiaSection = () => {
     <div className="">
       <AcademiaHeader text={"Writing samples"} />
       <AcademiaNav />
-      <div className="lg:px-10 w-full mb-0 lg:text-sm text-xs text-gray-600 font-inter">
+      <div className="lg:px-10 w-full mb-0 lg:text-sm text-base text-gray-600 font-inter">
         <div className="w-full mb-3 text-justify">
           Here you'll find some of the papers I wrote in an academic context.
           Though I do not have any published articles at the moment, I used my

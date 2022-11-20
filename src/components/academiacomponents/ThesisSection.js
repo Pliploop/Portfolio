@@ -25,7 +25,7 @@ function ThesisSection() {
           <div className="h-px grow bg-gray-500"></div>
         </div>
         <div
-          className={`relative font-inter text-[13px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+          className={`relative font-inter text-base text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
             abstractdeployed ? "h-1/3" : "h-auto"
           }`}
         >
@@ -122,15 +122,26 @@ function ThesisSection() {
             </div>
             <Tocitem
               num={"1."}
-              text={"State of the art - audio preprocessing"}
+              text={"Context & recommender systems"}
+              href={"./tfe1.pdf"}
             />
             <Tocitem
               num={"2."}
-              text={"State of the art - Music Tagging Models"}
+              text={"State of the art - audio preprocessing"}
+              href={"./tfe2.pdf"}
             />
-            <Tocitem num={"3."} text={"Implementation"} />
-            <Tocitem num={"4."} text={"Pipeline design & Model selection"} />
-            <Tocitem num={"5."} text={"Results"} />
+            <Tocitem
+              num={"3."}
+              text={"State of the art - Music Tagging Models"}
+              href={"./tfe3.pdf"}
+            />
+            <Tocitem num={"4."} text={"Implementation"} href={"./tfe4.pdf"} />
+            <Tocitem
+              num={"5."}
+              text={"Pipeline design & Model selection"}
+              href={"./tfe5.pdf"}
+            />
+            <Tocitem num={"6."} text={"Results"} href={"./tfe6.pdf"} />
           </div>
         </div>
       </div>
@@ -182,15 +193,26 @@ function ThesisSectionSmall() {
               </div>
               <Tocitem
                 num={"1."}
-                text={"State of the art - audio preprocessing"}
+                text={"Context & recommender systems"}
+                href={"./tfe1.pdf"}
               />
               <Tocitem
                 num={"2."}
-                text={"State of the art - Music Tagging Models"}
+                text={"State of the art - audio preprocessing"}
+                href={"./tfe2.pdf"}
               />
-              <Tocitem num={"3."} text={"Implementation"} />
-              <Tocitem num={"4."} text={"Pipeline design & Model selection"} />
-              <Tocitem num={"5."} text={"Results"} />
+              <Tocitem
+                num={"3."}
+                text={"State of the art - Music Tagging Models"}
+                href={"./tfe3.pdf"}
+              />
+              <Tocitem num={"4."} text={"Implementation"} href={"./tfe4.pdf"} />
+              <Tocitem
+                num={"5."}
+                text={"Pipeline design & Model selection"}
+                href={"./tfe5.pdf"}
+              />
+              <Tocitem num={"6."} text={"Results"} href={"./tfe6.pdf"} />
             </div>
           </div>
         </div>
@@ -203,7 +225,7 @@ function ThesisSectionSmall() {
             <div className="h-px grow bg-gray-500"></div>
           </div>
           <div
-            className={`relative font-inter text-[12px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+            className={`relative font-inter text-sm text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
               abstractdeployed ? "h-56" : "h-auto"
             }`}
           >

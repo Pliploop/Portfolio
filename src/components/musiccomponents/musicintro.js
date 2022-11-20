@@ -6,7 +6,7 @@ import pc from "../../content/images/PC.png";
 const MusicIntro = () => {
     return (
       <div className=" flex lg:flex-row flex-col mb-20">
-        <div className=" lg:w-[27%] w-full lg:px-10 font-inter lg:text-sm text-xs lg:mb-0 mb-10">
+        <div className=" lg:w-[27%] w-full lg:px-10 font-inter lg:text-sm text-sm lg:mb-0 mb-10">
           <p className="text-justify mb-10">
             Music has been the focal point of my life for the past 5 years. I
             started playing music about 8 years ago with guitar, and have never

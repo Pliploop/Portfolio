@@ -22,11 +22,11 @@ export function HeroSection() {
         <div className="grow lg:ml-20 flex flex-col justify-between gap-5">
           <div className="w-full lg:h-3/4">
             <h1 className="section-title mb-5">Julien Guinot, MSc</h1>
-            <span className="text-sm text-gray-600 font-bold text-justify">
+            <span className="text-base text-gray-600 font-bold text-justify">
               {" "}
               Welcome to my artistic & academic portfolio!{" "}
             </span>{" "}
-            <p className="text-sm text-gray-600 text-justify">
+            <p className="text-base text-gray-600 text-justify">
               {" "}
               I'm a French-American double Masters graduate passionate about
               music and AI, and I believe research in those fields is my
@@ -37,12 +37,12 @@ export function HeroSection() {
             </p>
             <br />
             <br />
-            <p className="text-sm text-gray-600 text-justify">
+            <p className="text-base text-gray-600 text-justify">
               {" "}
-              On this website you'll find my academic writing sample as well as music
-              I've either made, arranged, performed, mixed and/or mastered. This
-              is an academia-oriented portfolio, so for further info and
-              projects you can check out{" "}
+              On this website you'll find my academic writing sample as well as
+              music I've either made, arranged, performed, mixed and/or
+              mastered. This is an academia-oriented portfolio, so for further
+              info and projects you can check out{" "}
               <a
                 href="https://julienguinot.com"
                 className="text-blue-400 hover:text-blue-500 hover:font-bold"
@@ -84,10 +84,13 @@ const ResearchIdeasSection = () => {
           Research projects
         </h2>
         <div className="mx-3 h-px grow bg-blue-400 self-center"></div>
-        <HiMagnifyingGlassCircle size={24} className="self-center text-blue-400" />
+        <HiMagnifyingGlassCircle
+          size={24}
+          className="self-center text-blue-400"
+        />
       </div>
       <div className="flex flex-col gap-10">
-        <p className="w-full font-inter text-gray-600 text-justify text-sm">
+        <p className="w-full font-inter text-gray-600 text-justify text-base">
           {" "}
           Recently, the surge in interest for AI generative creativity in the
           image and video (DALL-E, Stable Diffusion) domain has fascinated me
@@ -96,7 +99,7 @@ const ResearchIdeasSection = () => {
           are a list of potential research projects I have - related to
           diffusion
         </p>
-        <div className="flex flex-row gap-10 font-inter text-blue-500 justify-center mb-5 flex-wrap">
+        <div className="lg:flex flex-row gap-10 font-inter text-blue-500 justify-center mb-5 flex-wrap hidden">
           <Academiatag2
             text={
               "(Text prompt / style) conditioned music / drum samples and grooves generation."
@@ -122,6 +125,24 @@ const ResearchIdeasSection = () => {
           <Academiatag2
             text={"Melody-conditioned harmony line generation with diffusion"}
           />
+        </div>
+        <div className="w-full lg:hidden flex flex-col divide-y divide-blue-500 font-inter text-gray-600">
+          <div className="py-3">
+            {" "}
+            (Text prompt / style) conditioned music / drum samples and grooves
+            generation.
+          </div>
+
+          <div className="py-3"> Audio-informed time domain melody inpainting.</div>
+          <div className="py-3"> context-informed time domain chord inpainting.</div>
+          <div className="py-3">
+            {" "}
+            source separation on similar monophonic sources, e.g. separating
+            harmony lines from backing vocals.
+          </div>
+          <div className="py-3"> Singing voice cloning</div>
+          <div className="py-3"> Video classification for music tagging </div>
+          <div className="py-3"> Melody-conditioned harmony line generation with diffusion</div>
         </div>
         {/* <ul className="flex flex-row mb-5">
           <li className="text-base text-blue-500 font-inter justify-center">

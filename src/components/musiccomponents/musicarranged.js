@@ -71,10 +71,13 @@ const MusicArranged = () => {
           the audio, and created the youtube video from scratch. This project
           was a lot of fun, and you can find the sheet music below.
         </p>
-        <div className="rounded-full border-red-500 text-red-600 border-[1px] border-b-2 shadow-md bg-white p-3 justify-center flex flex-row gap-5 items-center hover:scale-[101%] hover:shadow-lg transition-all duration-[40ms] cursor-pointer active:scale-[97%] active:text-gray-700 active:border-gray-600">
+        <a className="rounded-full border-red-500 text-red-600 border-[1px] border-b-2 shadow-md bg-white p-3 justify-center flex flex-row gap-5 items-center hover:scale-[101%] hover:shadow-lg transition-all duration-[40ms] cursor-pointer active:scale-[97%] active:text-gray-700 active:border-gray-600"
+        href="/LIS.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
           <IoMusicalNotesSharp />
           <p className="text-sm ">Sheet Music</p>
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ function SpectrogramSection() {
             <div className="h-px grow bg-gray-500"></div>
           </div>
 
-          <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-800 w-full mb-5">
+          <div className="font-inter text-base text-justify flex flex-col gap-3 text-gray-800 w-full mb-5">
             <p>
               At the university of adelaide, I took a project-based course
               titled <b className="text-blue-600">Applied machine learning</b>{" "}
@@ -110,7 +110,7 @@ function SpectrogramSection() {
           <div className="h-px grow bg-gray-500"></div>
         </div>
         <div
-          className={`relative font-inter text-[14px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+          className={`relative font-inter text-base text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
             abstractdeployed ? "h-1/3" : "h-auto"
           }`}
         >
@@ -183,7 +183,7 @@ function SpectrogramSectionSmall() {
               <div className="h-px grow bg-gray-500"></div>
             </div>
 
-            <div className="font-inter text-[10.5px] text-justify flex flex-col gap-3 text-gray-800 mb-5">
+            <div className="font-inter text-sm text-justify flex flex-col gap-3 text-gray-800 mb-5">
               <p>
                 At the university of Adelaide, I took a project-based course
                 titled <b className="text-blue-600">Applied machine learning</b>{" "}
@@ -253,7 +253,7 @@ function SpectrogramSectionSmall() {
             <div className="h-px grow bg-gray-500"></div>
           </div>
           <div
-            className={`relative font-inter text-[12px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+            className={`relative font-inter text-sm text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
               abstractdeployed ? "h-56" : "h-auto"
             }`}
           >

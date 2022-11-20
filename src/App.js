@@ -1,7 +1,7 @@
 import { FaUserGraduate } from "react-icons/fa";
 import { HiAcademicCap } from "react-icons/hi";
 import { GiGuitarBassHead } from "react-icons/gi";
-import { SidebarIcon } from "./components/sidebaricon";
+import { SidebarIcon,SidebarIconsm } from "./components/sidebaricon";
 import { useEffect, useState } from "react";
 import { HeroSection } from "./sections/Hero";
 import { MusicSection } from "./sections/Music";
@@ -149,7 +149,7 @@ const SmallNav = (visible) => {
   return (
     <nav className="bg-white backdrop-blur-md bg-opacity-80 w-full py-2.5 fixed border-b z-50 border-gray-200 lg:hidden">
       <div className="flex flex-row justify-between py-3 px-5">
-        <SidebarIcon
+        <SidebarIconsm
           icon={<FaUserGraduate size={20}></FaUserGraduate>}
           aimid="root"
           scrollid="1"
@@ -159,7 +159,7 @@ const SmallNav = (visible) => {
         <div className=" grow flex flex-row justify-center items-center mx-3">
           <div className="grow h-[1px] bg-gradient-to-r from-teal-200 to-blue-400" />
         </div>
-        <SidebarIcon
+        <SidebarIconsm
           icon={<HiAcademicCap size={20}></HiAcademicCap>}
           aimid="2"
           scrollid="2"
@@ -169,7 +169,7 @@ const SmallNav = (visible) => {
         <div className="grow flex flex-row justify-center items-center mx-3">
           <div className="grow h-[1px] bg-gradient-to-r from-teal-200 to-blue-400" />
         </div>
-        <SidebarIcon
+        <SidebarIconsm
           icon={<GiGuitarBassHead size={20}></GiGuitarBassHead>}
           aimid="3"
           scrollid="3"

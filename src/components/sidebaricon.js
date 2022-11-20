@@ -1,13 +1,14 @@
+const scrollto = (id) => {
+  console.log("scrolling to " + id);
+  let element = document.getElementById(id);
+  element.scrollIntoView({ behavior: "smooth" });
+};
 
 const SidebarIcon = ({ icon, aimid, scrollid, visible, title, description }) => {
-  const scrollto = (id) => {
-    console.log("scrolling to " + id);
-    let element = document.getElementById(id);
-    element.scrollIntoView({ behavior: "smooth" });
-  };
+  
 
   var diff = visible !== scrollid;
-
+  console.log(visible)
 
   return (
     <div className="flex flex-row align-middle content-center lg:justify-left group">
@@ -35,4 +36,34 @@ const SidebarIcon = ({ icon, aimid, scrollid, visible, title, description }) => 
   );
 };
 
-export { SidebarIcon };
+const SidebarIconsm = ({ icon, aimid, scrollid, visible}) => {
+  
+
+  var diff = visible.visible !== scrollid;
+  console.log(visible.visible, diff, scrollid)
+
+  return (
+    <div className="flex flex-row align-middle content-center lg:justify-left group">
+      <div
+        className={`${diff ? 'sidebar-icon-container-active' : 'sidebar-icon-container-inactive'} group`}
+        onClick={() => {
+          scrollto(aimid);
+        }}
+        id={`icon${aimid}-sm`}
+      >
+        <div
+          className={`h-11 w-11 flex items-center justify-center rounded-full bg-white hover:bg-gray-100 group-active:bg-transparent`}
+        >
+          <div className= {"sidebar-icon group-active:text-white group-hover:text-blue-400"}>{icon}</div>
+        </div>
+      </div>
+    
+    <div className="flex flex-col justify-start content-start h-auto grow">
+    
+    </div>
+    
+    </div>
+  );
+};
+
+export { SidebarIcon, SidebarIconsm };

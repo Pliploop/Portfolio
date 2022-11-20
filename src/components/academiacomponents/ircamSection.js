@@ -24,7 +24,7 @@ function IRCAMSection() {
           <div className="h-px grow bg-gray-500"></div>
         </div>
         <div
-          className={`relative font-inter text-[13px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+          className={`relative font-inter text-base text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
             abstractdeployed ? "h-1/3" : "h-auto"
           }`}
         >
@@ -84,7 +84,7 @@ function IRCAMSection() {
             <div className="h-px grow bg-gray-500"></div>
           </div>
 
-          <div className="font-inter text-[12px] text-justify flex flex-col gap-3 text-gray-800 w-full mb-5">
+          <div className="font-inter text-base text-justify flex flex-col gap-3 text-gray-800 w-full mb-5">
             <p>
               In the second year of my masters at Ecole Centrale de Lyon, I
               undertook a research internship at IRCAM, Paris, in which I
@@ -106,7 +106,7 @@ function IRCAMSection() {
           </div>
           <div className="flex flex-row gap-5 items-center justify-start">
             <a
-              href="/TFE.pdf"
+              href="/ircam.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className=" rounded-full px-6 py-2 bg-white flex flex-row gap-3 active:bg-red-500 active:scale-95 active:text-white select-none border-[1px] border-red-500 hover:border-red-400 text-red-500 hover:text-red-600 transition-all duration-[20ms] items-center shadow-sm shadow-gray-400 group hover:bg-gray-100 cursor-pointer"
@@ -147,7 +147,7 @@ function IRCAMSectionSmall() {
               </a>{" "}
               : Active control of the first vibrational modes of a cello.
             </div>
-            <div className="font-inter text-[12px] text-justify flex flex-col gap-3 text-gray-800 w-full mb-5">
+            <div className="font-inter text-sm text-justify flex flex-col gap-3 text-gray-800 w-full mb-5">
               <p>
                 In the second year of my masters at Ecole Centrale de Lyon, I
                 undertook a research internship at IRCAM, Paris, in which I
@@ -170,7 +170,7 @@ function IRCAMSectionSmall() {
             </div>
             <div className="flex flex-row gap-5 items-center justify-start">
               <a
-                href="/TFE.pdf"
+                href="/ircam.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" rounded-full px-6 py-2 bg-white flex flex-row gap-3 active:bg-red-500 active:scale-95 active:text-white select-none border-[1px] border-red-500 hover:border-red-400 text-red-500 hover:text-red-600 transition-all duration-[20ms] items-center shadow-sm shadow-gray-400 group hover:bg-gray-100 cursor-pointer"
@@ -193,7 +193,7 @@ function IRCAMSectionSmall() {
           </div>
 
           <div
-            className={`relative font-inter text-[12px] text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
+            className={`relative font-inter text-sm text-justify flex flex-col gap-3 text-gray-600 overflow-hidden transition-transform duration-200 ease-linear ${
               abstractdeployed ? "h-56" : "h-auto"
             }`}
           >

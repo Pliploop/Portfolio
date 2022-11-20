@@ -174,33 +174,33 @@ const EducationSubSection = () => {
         <FaGraduationCap size={18} className="self-center text-blue-400" />
       </div>
 
-      <ul className="relative border-l border-gray-200 dark:border-gray-700 mt-3">
+      <ul className="relative border-l border-gray-200  mt-3">
         <li className="mb-3 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white   kbg-gray-700"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400  ktext-gray-500">
             2018-2022
           </time>
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900  ktext-white">
             MSc Engineering
           </h3>
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
+          <h3 className="text-sm font-semibold text-gray-900  mb-2">
             BSc Engineering
           </h3>
 
-          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500  ktext-gray-400">
             Ecole Centrale de Lyon - France
           </p>
           <p className="font-mono text-blue-500 text-sm mt-2">GPA: 3.6/4.0</p>
         </li>
         <li className="mb-3 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white   kbg-gray-700"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400  ktext-gray-500">
             2021-2022 - Abroad
           </time>
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900  ktext-white">
             MSc Engineering - Acoustics, Data Science
           </h3>
-          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500  ktext-gray-400">
             University of Adelaide - Australia
           </p>
           <p className="font-mono text-blue-500 text-sm mt-2">GPA: 5.9/7</p>
@@ -221,52 +221,52 @@ const ProfessionalSubsection = () => {
         <div className="mx-3 h-px grow bg-blue-400 self-center"></div>
         <GiSuitcase size={18} className="self-center text-blue-400" />
       </div>
-      <ul className="relative border-l border-gray-200 dark:border-gray-700 mt-3">
+      <ul className="relative border-l border-gray-200  mt-3">
         <li className="mb-3 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white   kbg-gray-700"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400  ktext-gray-500">
             Oct 2022-Present
           </time>
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900  ktext-white">
             Data Scientist
           </h3>
-          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500  ktext-gray-400">
             Believe
           </p>
         </li>
         <li className="mb-3 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white   kbg-gray-700"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400  ktext-gray-500">
             Apr 2022- Oct 2022
           </time>
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900  ktext-white">
             MIR Scientist / Data Scientist intern
           </h3>
-          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500  ktext-gray-400">
             Groover
           </p>
         </li>
         <li className="mb-3 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white   kbg-gray-700"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400  ktext-gray-500">
             Mar 2021- Oct 2021
           </time>
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900  ktext-white">
             Data Scientist intern
           </h3>
-          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500  ktext-gray-400">
             Artefact
           </p>
         </li>
         <li className="mb-3 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400">
             Mar 2020- Oct 2020
           </time>
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
+          <h3 className="text-sm font-semibold text-gray-900">
             Research Intern
           </h3>
-          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+          <p className="text-sm font-normal text-gray-500">
             IRCAM
           </p>
         </li>

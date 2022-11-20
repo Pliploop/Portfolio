@@ -13,7 +13,7 @@ const scrollto = (id) => {
 
 const MusicNav = () => {
   return (
-    <nav class="bg-white backdrop-filter backdrop-blur-md bg-opacity-70 px-10 py-5 dark:bg-gray-900 sticky grow z-50 pt-5 top-0 left-0 border-b border-gray-200 mb-20 hidden lg:flex">
+    <nav class="bg-white backdrop-filter backdrop-blur-md bg-opacity-70 px-10 py-5 sticky grow z-50 pt-5 top-0 left-0 border-b border-gray-200 mb-20 hidden lg:flex">
       <div class="container flex flex-wrap items-center justify-between mx-auto font-inter">
         <div
           onClick={() => {

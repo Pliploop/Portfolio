@@ -28,11 +28,11 @@ const MusicMixMaster = () => {
               Commuz'
             </a>
 
-            <blockquote class="lg:ml-14 p-4 bg-gray-50 border-l-4 border-gray-300 dark:border-gray-500 dark:bg-gray-800 relative">
+            <blockquote class="lg:ml-14 p-4 bg-gray-50 border-l-4 border-gray-300 relative">
               <div className="absolute w-[300px] aspect-square mt-[-180px] ml-[-150px] z-0 opacity-[3%]">
                 {commuzsvg}
               </div>
-              <p class="lg:text-sm text-xs italic font-medium leading-relaxed text-gray-900 dark:text-white z-40">
+              <p class="lg:text-sm text-xs italic font-medium leading-relaxed text-gray-900 z-40">
                 Commuz' is a student-led society that creates a new musical
                 theatre piece every year. Everything is done by the students :
                 Scenario, playwriting, Arrangement, Composition, Sound
@@ -43,7 +43,7 @@ const MusicMixMaster = () => {
             </blockquote>
             <div className="flex lg:flex-row flex-col">
               <div>
-                <p class="mt-8 font-inter leading-relaxed text-gray-900 dark:text-white lg:text-base text-sm z-40 mb-10 lg:w-5/6 text-justify">
+                <p class="mt-8 font-inter leading-relaxed text-gray-900 lg:text-base text-sm z-40 mb-10 lg:w-5/6 text-justify">
                   Every year, a new play is born and I took part in each one of
                   my 4 years at ECL. I started as a sound engineer and kept
                   mixing the album every year, which is mostly where I learned
@@ -51,7 +51,7 @@ const MusicMixMaster = () => {
                   featured mixes from last year's edition here!
                 </p>
 
-                <p class="mt-8 font-inter leading-relaxed text-gray-900 dark:text-white font-bold lg:text-base text-sm z-40 lg:mb-20 mb-10 lg:w-3/4">
+                <p class="mt-8 font-inter leading-relaxed text-gray-900 font-bold lg:text-base text-sm z-40 lg:mb-20 mb-10 lg:w-3/4">
                   My roles each year of the play were:
                 </p>
               </div>
@@ -111,11 +111,11 @@ const MusicMixMaster = () => {
               </div>
             </div>
 
-            <p class="mt-8 font-inter text-gray-900 dark:text-white text-sm z-40 lg:hidden flex">
+            <p class="mt-8 font-inter text-gray-900 text-sm z-40 lg:hidden flex">
               And my featured mixes from last year are :
             </p>
 
-            <p class="mt-0 font-inter font-bold text-gray-900 dark:text-white text-sm z-40 lg:hidden flex">
+            <p class="mt-0 font-inter font-bold text-gray-900  text-sm z-40 lg:hidden flex">
               Feeling Good, Joga, Still Loving You, Le Rituel
             </p>
           </div>
@@ -359,7 +359,7 @@ const AlbumDescriptionDesorien = ({ color, albumid, currentalbum }) => {
         mixing and audio post-production. My tracks are sloppy but I am proud as
         they were the start of my journey in mixing.
       </span>
-      <ul className="flex  lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-orange-500 text-sm dark:text-white ">
+      <ul className="flex  lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-orange-500 text-sm  ">
         <li className="font-inter font-bold">Ali Babouche</li>
         <li className="font-inter font-bold">Le bazar</li>
         <li className="font-inter font-bold">
@@ -414,7 +414,7 @@ const AlbumDescriptionEnMem = ({ color, albumid, currentalbum }) => {
           I had learned so much the previous years and am proud of my mixes,
           which are:
         </p>
-        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-purple-500 dark:text-white ">
+        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-purple-500  ">
           <li className="font-inter font-bold">Treasure</li>
           <li className="font-inter font-bold">Joga</li>
           <li className="font-inter font-bold">Le rituel</li>
@@ -465,7 +465,7 @@ const AlbumDescriptionNocesDo = ({ color, albumid, currentalbum }) => {
           became my favourite DAW. I learned to transpose what I knew on FL
           studio to it and explored new venues for mixing :
         </p>
-        <ul className="list-disc text-gray-900 dark:text-white ">
+        <ul className="list-disc text-gray-900 ">
           <li className="font-inter font-bold">
             Multi-band compression and side-chaining
           </li>
@@ -484,7 +484,7 @@ const AlbumDescriptionNocesDo = ({ color, albumid, currentalbum }) => {
         As per usual, I was also in charge of distributing the album on spotify.
         My contributions as mix engineer to the album were:
       </span>
-      <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-red-500 text-sm dark:text-white ">
+      <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-red-500 text-sm">
         <li className="font-inter font-bold">Good Morning</li>
         <li className="font-inter font-bold">Eternal Youth</li>
         <li className="font-inter font-bold">I love you</li>
@@ -514,7 +514,7 @@ const AlbumDescriptionContre = ({ color, albumid, currentalbum }) => {
           Louis XIV. I was recruited as community manager and graphic designer
           for the team. My responsibilities included:
         </p>
-        <ul className="list-disc text-gray-900 dark:text-white ">
+        <ul className="list-disc text-gray-900">
           <li className="font-inter font-bold">
             Creating social media content for the teams : the official poster,
             trailer videos, audition advertising media were all my creation
@@ -545,7 +545,7 @@ const AlbumDescriptionContre = ({ color, albumid, currentalbum }) => {
           first time. My contributions as mix engineer to the album were:{" "}
         </p>
 
-        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-blue-500 text-sm dark:text-white ">
+        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-blue-500 text-sm">
           <li className="font-inter font-bold">Te Deum</li>
           <li className="font-inter font-bold">A contretemps</li>
           <li className="font-inter font-bold">La cour dérape</li>

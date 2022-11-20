@@ -6,12 +6,15 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["inter"],
-        sans: ['inter'],
-        mono: ['monospace']
+        sans: ["inter"],
+        mono: ["monospace"],
       },
     },
   },
   plugins: [
-    require('tailwind-scrollbar')
+    require("tailwind-scrollbar"),
+    require('tailwind-scrollbar-hide'),
+    require("tailwindcss"),
+    require("autoprefixer"),
   ],
 };

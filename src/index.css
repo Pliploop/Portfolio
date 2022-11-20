@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img, strong, sub, sup, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, time {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
 @font-face {
   font-family: "inter";
   src: url("../public/fonts/inter/Inter-Medium.otf");
@@ -17,6 +29,10 @@
   font-style: normal;
   font-display: swap;
 }
+
+html {
+  font-size:15px;
+} 
 
 @layer components {
   .show {
@@ -81,6 +97,10 @@
 
   .subnav-tag {
     @apply bg-white cursor-pointer text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  border-[1px] border-gray-500 p-2 px-3 rounded-full hover:border-blue-700;
+  }
+
+  * {
+    @apply scrollbar-hide
   }
 
   /* * {

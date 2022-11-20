@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div
-      className="flex lg:flex-row flex-col lg:gap-20 md:p-10 lg:p-20 p-0"
+      className="flex lg:flex-row flex-col lg:gap-20 md:p-10 lg:p-20 p-0 scrollbar-hide"
       id="root"
     >
       <div className="grow h-auto flex flex-col gap-20 lg:mt-0 mt-20">
@@ -110,7 +110,7 @@ function App() {
 
 const BigNav = ({ visible }) => {
   return (
-    <div className="h-[calc(100vh-10rem)] lg:w-[100%] top-20 bottom-20 sticky lg:flex flex-col content-between justify-between py-10 pt-5 px-10 hidden">
+    <div className="h-[calc(100vh-10rem)] lg:w-[100%] top-20 bottom-20 sticky lg:flex flex-col content-between justify-between py-10 pb-40 pt-5 px-10 hidden">
       <SidebarIcon
         icon={<FaUserGraduate size={20}></FaUserGraduate>}
         aimid="root"

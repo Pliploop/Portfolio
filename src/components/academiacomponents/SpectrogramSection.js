@@ -26,7 +26,7 @@ function SpectrogramSection() {
             {" "}
             Artist classification through spectrogram learning
           </div>
-          <div className="flex flex-row gap-3 text-[10px] font-inter text-blue-700 justify-end mb-5">
+          <div className="flex flex-row gap-3 text-[10px] font-inter text-blue-700 justify-end mb-5 flex-wrap">
             <Academiatag text={"Music Information Retrieval"} />
             <Academiatag text={"Music Tagging"} />
             <Academiatag text={"Machine Learning"} />

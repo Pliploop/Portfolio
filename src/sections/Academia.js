@@ -80,7 +80,7 @@ const AcademiaNav = () => {
                 Assignments
               </div>
             </li>
-            <li>
+            {/* <li>
               <div
                 class="subnav-tag"
                 onClick={() => {
@@ -89,7 +89,7 @@ const AcademiaNav = () => {
               >
                 Acoustic Diode
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -249,7 +249,7 @@ const MusicFeatured = () => {
                   />
                 </div>
                 <div className="flex flex-col lg:w-2/3">
-                  <div className="flex flex-row justify-items-start gap-3 lg:h-8 flex-wrap mb-6">
+                  <div className="flex flex-row justify-items-start gap-3 flex-wrap mb-6">
                     <div className="featured-tag-yellow">Production</div>
                     <div className="featured-tag-yellow">Mixing</div>
                     <div className="featured-tag-yellow">Mastering</div>
@@ -296,7 +296,7 @@ const MusicFeatured = () => {
                   />
                 </div>
                 <div className="flex flex-col lg:w-2/3">
-                  <div className="flex flex-row justify-items-start gap-3 mb-6 h-8 flex-wrap">
+                  <div className="flex flex-row justify-items-start gap-3 mb-6 flex-wrap">
                     <div className="featured-tag-purple">Mixing</div>
                     <div className="featured-tag-purple">Mastering</div>
                   </div>

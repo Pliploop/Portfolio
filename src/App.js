@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div
-      className="flex lg:flex-row flex-col lg:gap-20 md:p-10 lg:p-10 p-0 scrollbar-hide"
+      className="flex lg:flex-row flex-col lg:gap-10 md:p-20 md:px-10  p-0 scrollbar-hide"
       id="root"
     >
       <div className="grow h-auto flex flex-col gap-20 lg:mt-0 mt-20">

@@ -484,7 +484,7 @@ const AlbumDescriptionNocesDo = ({ color, albumid, currentalbum }) => {
         As per usual, I was also in charge of distributing the album on spotify.
         My contributions as mix engineer to the album were:
       </span>
-      <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-red-500 text-sm">
+      <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc list-inside items-center text-red-500 text-sm">
         <li className="font-inter font-bold">Good Morning</li>
         <li className="font-inter font-bold">Eternal Youth</li>
         <li className="font-inter font-bold">I love you</li>
@@ -545,7 +545,7 @@ const AlbumDescriptionContre = ({ color, albumid, currentalbum }) => {
           first time. My contributions as mix engineer to the album were:{" "}
         </p>
 
-        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-blue-500 text-sm">
+        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc list-inside items-center text-blue-500 text-sm">
           <li className="font-inter font-bold">Te Deum</li>
           <li className="font-inter font-bold">A contretemps</li>
           <li className="font-inter font-bold">La cour dérape</li>

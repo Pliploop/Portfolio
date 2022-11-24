@@ -414,7 +414,7 @@ const AlbumDescriptionEnMem = ({ color, albumid, currentalbum }) => {
           I had learned so much the previous years and am proud of my mixes,
           which are:
         </p>
-        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-purple-500 lg:w-2/3  ">
+        <ul className="flex lg:flex-wrap lg:flex-row flex-col justify-evenly list-disc items-center text-purple-500 list-inside  ">
           <li className="font-inter font-bold">Treasure</li>
           <li className="font-inter font-bold">Joga</li>
           <li className="font-inter font-bold">Le rituel</li>

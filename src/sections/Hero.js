@@ -343,7 +343,7 @@ const ResearchSection = () => {
           that advances in music technology powered by artficial intelligence
           can be powerful catalysts for creative musical outlets. As a vocalist,
           multiinstrumentalist, producer, mixing and mastering aficionado, my
-          interests span a large range of current studies in music technology:
+          interests span a large range of current domains in sound and music computing:
         </p>
         <ul className="flex lg:flex-row flex-col lg:gap-0 gap-10 justify-evenly mb-5 lg:px-0 px-10">
           <li className="text-base text-blue-500 font-inter text-center">
@@ -362,9 +362,9 @@ const ResearchSection = () => {
             Methods
             <div className="w-full h-px bg-blue-500 my-3"></div>
             <ul className="font-inter font-base text-sm text-gray-600  flex flex-col gap-2">
-              <li>Contrastive learning</li>
-              <li>Active learning</li>
-              <li>Cross-modal learning</li>
+              <li>Representation learning</li>
+              <li>Self-supervised learning</li>
+              <li>Multimodal representations</li>
               <li>Few-shot learning</li>
             </ul>
           </li>

@@ -177,7 +177,7 @@ const MusicFeatured = () => {
                 id="aztecreadmoregradient"
               ></div>
               <p className="font-inter text-sm mb-3">
-                I'm also part of a band for which I am bassist, mixing engineer
+                I'm also part of a funk-soul-RnB band for which I am bassist, mixing engineer
                 and mastering engineer. We treated ourselves to a studio
                 recording session to record some covers, the first of which is
                 colors by Black Pumas. The first version of the video (still

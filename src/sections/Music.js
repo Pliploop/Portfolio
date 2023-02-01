@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 import { MusicIntro } from "../components/musiccomponents/musicintro";
 import { MusicArranged } from "../components/musiccomponents/musicarranged";
 import { MusicMixMaster } from "../components/musiccomponents/musicmixmaster";
+import image from "../content/images/logo.png";
 
 const scrollto = (id) => {
   console.log("scrolling to " + id);
@@ -77,7 +78,7 @@ export function MusicSection() {
       <MusicIntro />
       {/* </div> */}
       <div className="flex flex-col w-full  mb-20">
-      <div
+        <div
           className="absolute show -mt-40 h-10 w-10 invisible"
           id="featured"
         />
@@ -85,7 +86,7 @@ export function MusicSection() {
         <MusicFeatured />
       </div>
       <div className="flex flex-col w-full  mb-20">
-      <div
+        <div
           className="absolute show -mt-40 h-10 w-10 invisible"
           id="mixmaster"
         />
@@ -146,9 +147,68 @@ const MusicFeatured = () => {
   }
   return (
     <div className=" flex lg:flex-col flex-col gap-14 w-full lg:px-10">
-      <div className="flex lg:flex-row flex-col w-full h-auto gap-10">
-        <div className="flex flex-col lg:w-3/4 h-full pb-0">
-          <div className="lg:h-full w-full border-[1px] border-emerald-300 border-b-[6px] cursor-pointer text-gray-600 hover:shadow-lg hover:scale-[102%] hover:border-emerald-500 transition-all duration-100 shadow-md rounded-3xl p-5">
+      <div className="flex lg:flex-row flex-col w-full h-auto lg:gap-10 hover:border-sky-500 transition-all duration-100 shadow-md rounded-3xl hover:shadow-lg hover:scale-[102%] border-[1px] border-sky-300 border-b-[6px] cursor-pointer">
+        <div className="lg:h-2/3 grow lg:m-10 m-5 mb-0 lg:mr-5  flex flex-col">
+          <div className=" rounded-xl overflow-clip shadow-md aspect-video">
+            <ReactPlayer
+              width={"100%"}
+              height={"100%"}
+              url="https://www.youtube.com/watch?v=vkYPdhBOQfs"
+              controls={true}
+            />
+          </div>
+          <div className="flex flex-row justify-items-start gap-3 flex-wrap mb-0 mt-5">
+            <div className="featured-tag-blue">Performance</div>
+            <div className="featured-tag-blue">Mixing</div>
+            <div className="featured-tag-blue">Mastering</div>
+          </div>
+        </div>
+        <div className="flex flex-col lg:w-1/3 h-full pb-0">
+          <div className="lg:h-full w-full  text-gray-600   p-10">
+            <div className="w-full grow flex flex-row lg:justify-start justify-evenly  mb-3">
+              <img src={image} alt="" className="w-2/3" />
+            </div>
+            <div
+              className="h-44 lg:h-auto overflow-hidden relative transition-all duration-200"
+              id="aztecreadmoretext"
+            >
+              <div
+                className="absolute h-full w-full bg-gradient-to-b from-transparent to-white lg:hidden"
+                id="aztecreadmoregradient"
+              ></div>
+              <p className="font-inter text-sm mb-3">
+                I'm also part of a band for which I am bassist, mixing engineer
+                and mastering engineer. We treated ourselves to a studio
+                recording session to record some covers, the first of which is
+                colors by Black Pumas. The first version of the video (still
+                being edited) is shown here.
+              </p>
+              <p className="font-inter text-sm mb-3">
+                I mixed and mastered this recording, which proved so much easier with clean stems compared to commuz (see below). I think this mix is quite enjoyable. Two more covers are on the way.
+              </p>
+
+              <p className="font-mono text-xs text-gray-500  mb-3">
+                Fun fact : I also made this temporary logo!
+              </p>
+            </div>
+            <div
+              className="flex flex-col items-center justify-center mt-5 lg:hidden"
+              onClick={() => toggleAztecText()}
+            >
+              <p className="text-gray-600 font-mono z-40" id="readmore">
+                read more
+              </p>
+              <GrDown
+                className="rotate-0 transition-all duration-300"
+                id="readmoreicon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex lg:flex-row flex-col w-full h-auto gap-10 hover:border-emerald-500 transition-all duration-100 shadow-md rounded-3xl hover:shadow-lg hover:scale-[102%] border-[1px] border-emerald-300 border-b-[6px] cursor-pointer">
+        <div className="flex flex-col lg:w-3/4 h-full pb-0 ">
+          <div className="lg:h-full w-full  text-gray-600   p-5">
             <h2 className="font-inter text-lg mb-3 font-bold text-emerald-500">
               Aztecs : original composition
             </h2>
@@ -199,7 +259,7 @@ const MusicFeatured = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col align-top items-start content-start h-full grow lg:pr-20">
+        <div className="flex flex-col align-top items-start content-start h-full grow lg:pr-20 p-5">
           <div className="w-full rounded-xl overflow-clip mb-5 shadow-md">
             <ReactPlayer
               width={"100%"}
@@ -242,7 +302,6 @@ const MusicFeatured = () => {
               <div className="flex lg:flex-row flex-col gap-5 w-full">
                 <div className="aspect-square lg:w-56 w-full rounded-2xl overflow-clip mb-5 shadow-md">
                   <ReactPlayer
-                    
                     height={"100%"}
                     width={"100%"}
                     url="https://soundcloud.com/jujgui/likethat-remastered"

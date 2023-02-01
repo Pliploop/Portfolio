@@ -91,6 +91,12 @@ html {
     @apply border-[1px] border-b-2 border-white bg-gradient-to-tr from-yellow-300 to-orange-500 shadow-md text-white font-bold rounded-full px-5 p-2 font-mono text-[10px] cursor-default hover:scale-[101%] hover:from-orange-500 hover:shadow-gray-400 hover:to-yellow-400 transition-all duration-75;
   }
 
+  
+  .featured-tag-blue {
+    @apply border-[1px] border-b-2 border-white bg-gradient-to-tr from-blue-300 to-sky-500 shadow-md text-white font-bold rounded-full px-5 p-2 font-mono text-[10px] cursor-default hover:scale-[101%] hover:from-sky-500 hover:shadow-gray-400 hover:to-blue-400 transition-all duration-75;
+  }
+
+
   .featured-tag-purple {
     @apply border-[1px] border-b-2 border-white bg-gradient-to-tr from-blue-300 to-purple-500 shadow-md text-white font-bold rounded-full px-5 p-2 font-mono text-[10px] cursor-default hover:scale-[101%] hover:from-blue-600 hover:shadow-gray-400 hover:to-purple-400 transition-all duration-75;
   }
